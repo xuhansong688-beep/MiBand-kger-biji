@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "小米手环凯格尔学习/obsidian指令大全.md",
+                "file": "小米手环凯格尔学习/学习安排时间规划.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "obsidian指令大全"
+              "title": "学习安排时间规划"
             }
           }
         ],
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "小米手环凯格尔学习/obsidian指令大全.md",
+                "file": "小米手环凯格尔学习/学习安排时间规划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "obsidian指令大全 的反向链接列表"
+              "title": "学习安排时间规划 的反向链接列表"
             }
           },
           {
@@ -148,12 +148,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "小米手环凯格尔学习/obsidian指令大全.md",
+                "file": "小米手环凯格尔学习/学习安排时间规划.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "obsidian指令大全 的出链列表"
+              "title": "学习安排时间规划 的出链列表"
             }
           },
           {
@@ -177,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "小米手环凯格尔学习/obsidian指令大全.md",
+                "file": "小米手环凯格尔学习/学习安排时间规划.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "obsidian指令大全 的大纲"
+              "title": "学习安排时间规划 的大纲"
             }
           },
           {
@@ -217,10 +217,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff25377711e956e3",
+  "active": "ff6306a1cf829394",
   "lastOpenFiles": [
-    "小米手环凯格尔学习/未命名.md",
     "小米手环凯格尔学习/obsidian指令大全.md",
+    "小米手环凯格尔学习/学习安排时间规划.md",
     "小米手环凯格尔学习/GitHub及git的初步学习.md",
     "README.md",
     "未命名.canvas",
