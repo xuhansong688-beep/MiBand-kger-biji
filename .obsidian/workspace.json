@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "小米手环凯格尔学习/学习安排时间规划.md",
+                "file": "小米手环凯格尔学习/js学习.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "学习安排时间规划"
+              "title": "js学习"
             }
           }
         ],
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "小米手环凯格尔学习/学习安排时间规划.md",
+                "file": "小米手环凯格尔学习/js学习.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "学习安排时间规划 的反向链接列表"
+              "title": "js学习 的反向链接列表"
             }
           },
           {
@@ -148,12 +148,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "小米手环凯格尔学习/学习安排时间规划.md",
+                "file": "小米手环凯格尔学习/js学习.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "学习安排时间规划 的出链列表"
+              "title": "js学习 的出链列表"
             }
           },
           {
@@ -177,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "小米手环凯格尔学习/学习安排时间规划.md",
+                "file": "小米手环凯格尔学习/js学习.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "学习安排时间规划 的大纲"
+              "title": "js学习 的大纲"
             }
           },
           {
@@ -219,8 +219,8 @@
   },
   "active": "ff6306a1cf829394",
   "lastOpenFiles": [
-    "小米手环凯格尔学习/js学习.md",
     "小米手环凯格尔学习/学习安排时间规划.md",
+    "小米手环凯格尔学习/js学习.md",
     "小米手环凯格尔学习/obsidian指令大全.md",
     "小米手环凯格尔学习/GitHub及git的初步学习.md",
     "README.md",

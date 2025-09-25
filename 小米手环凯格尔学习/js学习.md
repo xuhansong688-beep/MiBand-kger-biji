@@ -6,4 +6,24 @@ string字符 number数字没有浮点概念 bollean正确与否 null数字被定
  数组前面加：bbb.unshift("asdasd")
  后面：aaa.push("1qasd") 删除是.pop()
  log(array.isarray("))出现对错
- 
+ 面向对象，转换json形式：const todos = [
+        {
+                id: 1,
+                test : "aushdhasd",
+                isss:true,
+        },
+        {
+                id: 2,
+                test : "aushdhasd",
+                isss:true,
+        },
+        {
+                id: 3,
+                test : "aushdhasd",
+                isss:true,
+        },
+];
+const todojoso = JSON.stringify(todos);
+console.log(todos);
+console.log(todojoso);
+
