@@ -28,3 +28,6 @@ console.log(todos);
 console.log(todojoso);
 
 if判断== 是都行 === 是必须一个
+for(let todo of todos){
+        console.log(todo.test);
+}
