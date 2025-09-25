@@ -1,0 +1,2 @@
+变量let可变，const不可变
+string字符 number数字没有浮点概念 bollean正确与否 null数字被定义但是为空 undefine 不可被定义
