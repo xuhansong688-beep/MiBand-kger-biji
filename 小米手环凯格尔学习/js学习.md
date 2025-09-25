@@ -1,2 +1,5 @@
 变量let可变，const不可变
 string字符 number数字没有浮点概念 bollean正确与否 null数字被定义但是为空 undefine 不可被定义
+在后加.split（“”）可以通过引号中的内容进行分割
+数组是中括号加双引号加逗号
+打印中加点中括号数字是第几个
