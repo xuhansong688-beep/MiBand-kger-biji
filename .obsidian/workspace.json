@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "小米手环凯格尔学习/GitHub及git的初步学习.md",
+                "file": "学校内容/smash.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "GitHub及git的初步学习"
+              "title": "smash"
             }
           },
           {
@@ -55,8 +55,7 @@
               "title": "js学习"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -217,15 +216,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff6306a1cf829394",
+  "active": "6611c02789391611",
   "lastOpenFiles": [
-    "小米手环凯格尔学习/学习安排时间规划.md",
-    "小米手环凯格尔学习/js学习.md",
-    "小米手环凯格尔学习/obsidian指令大全.md",
     "小米手环凯格尔学习/GitHub及git的初步学习.md",
+    "学校内容/smash.md",
+    "未命名",
+    "学校内容",
+    "小米手环凯格尔学习/js学习.md",
+    "小米手环凯格尔学习/学习安排时间规划.md",
+    "小米手环凯格尔学习/obsidian指令大全.md",
     "README.md",
     "未命名.canvas",
-    "未命名",
     "新建 文本文档.txt",
     "().md"
   ]
