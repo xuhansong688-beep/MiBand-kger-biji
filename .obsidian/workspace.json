@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学校内容/smash.md",
+                "file": "学校内容/UNIX.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "smash"
+              "title": "UNIX"
             }
           },
           {
@@ -218,8 +218,9 @@
   },
   "active": "6611c02789391611",
   "lastOpenFiles": [
-    "小米手环凯格尔学习/GitHub及git的初步学习.md",
     "学校内容/smash.md",
+    "学校内容/UNIX.md",
+    "小米手环凯格尔学习/GitHub及git的初步学习.md",
     "未命名",
     "学校内容",
     "小米手环凯格尔学习/js学习.md",
