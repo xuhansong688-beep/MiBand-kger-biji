@@ -11,24 +11,17 @@
             "id": "6611c02789391611",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "学校内容/smash.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": true,
-                  "unlinkedCollapsed": true
+                "file": "未命名.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
                 }
               },
-              "icon": "lucide-file",
-              "title": "smash"
+              "icon": "lucide-layout-dashboard",
+              "title": "未命名"
             }
           },
           {
@@ -216,8 +209,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6611c02789391611",
+  "active": "f4e33c56255cd19f",
   "lastOpenFiles": [
+    "README.md",
+    "未命名.canvas",
     "学校内容/UNIX.md",
     "学校内容/smash.md",
     "小米手环凯格尔学习/GitHub及git的初步学习.md",
@@ -226,8 +221,6 @@
     "小米手环凯格尔学习/js学习.md",
     "小米手环凯格尔学习/学习安排时间规划.md",
     "小米手环凯格尔学习/obsidian指令大全.md",
-    "README.md",
-    "未命名.canvas",
     "新建 文本文档.txt",
     "().md"
   ]
