@@ -36,4 +36,6 @@ Figure 5:Code de la commande Interp1
 ![[Pasted image 20251023205826.png]]
 Figure 6 le graphique de la fonction linéaire par morceaux
 
-4:
+4:Grâce à la fonction affine par morceaux, nous avons obtenu les vitesses de la voiture aux deux instants suivants.
+Figure 7: Valeurs de vitesse 
+我们可以发现，得到的值略小于我们通过插项多项式
