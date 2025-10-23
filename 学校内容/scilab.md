@@ -58,5 +58,11 @@ Les fonctions affines par morceaux présentent l’inconvénient de ne pas être
 Le polynôme d’interpolation de Newton, quant à lui, a tendance à osciller aux points d’interpolation, ce qui entraîne des résultats de calcul moins précis.  
 Sur ces aspects, la fonction _spline cubique_ se comporte nettement mieux.
 
-7：按照要求，我们构造一个formule composite des trap
+7：按照要求，我们构造一个Formule composite des trapèzes的代码，来进行整体的积分。
+Conformément aux exigences, nous allons construire un code pour la formule composite des trapèzes afin de réaliser l'intégrale globale.
+///////
+Figure 10：Code de Formule composite des trapèzes
+
+Figure 11:Valeur de la distance
+Après le calcul, la distance que nous avons obtenue est
 
