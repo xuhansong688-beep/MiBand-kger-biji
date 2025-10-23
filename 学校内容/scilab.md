@@ -31,6 +31,9 @@ Figure 4:la vitesse du véhicule
 On peut observer que les valeurs de vitesse sont relativement précises à 2,5 s et 42,5 s, tandis qu'une distorsion grave apparaît autour de 52 s. Je pense que cela est lié aux grandes oscillations du polynôme P que nous avons obtenu après 45 s.
 
 3En utilisant la fonction `interpl`, nous avons obtenu avec succès le graphique suivant.
-
+有个图像在这里
+Figure 5:Code de la commande Interp1
 ![[Pasted image 20251023205826.png]]
 Figure 6 le graphique de la fonction linéaire par morceaux
+
+4:
