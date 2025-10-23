@@ -50,5 +50,13 @@ Figure 8:Code de la commande spline
 Figure 9:Valeurs de vitesse
 
 6:我认为la fonction spline cubique更好
-fonctions affines par morceaux的劣势是构造的函数不平滑，wu'cha
+fonctions affines par morceaux的劣势是构造的函数不平滑，误差较大
+le polynôme d’interpolation de Newton的劣势是在给出的插值点上会出现震荡，造成不准确的测量
+在这些方面，la fonction spline cubique表现得更好
+Je pense que la fonction _spline cubique_ est plus performante.  
+Les fonctions affines par morceaux présentent l’inconvénient de ne pas être lisses et de produire une erreur relativement importante.  
+Le polynôme d’interpolation de Newton, quant à lui, a tendance à osciller aux points d’interpolation, ce qui entraîne des résultats de calcul moins précis.  
+Sur ces aspects, la fonction _spline cubique_ se comporte nettement mieux.
+
+7：按照要求，我们构造一个formule composite des trap
 
