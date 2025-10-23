@@ -66,3 +66,10 @@ Figure 10：Code de Formule composite des trapèzes
 Figure 11:Valeur de la distance
 Après le calcul, la distance que nous avons obtenue est
 
+通过观察我们发现，X有9个值，那么分割点为8个（n = 8为偶数），可以使用formule composite de Simpson
+En observant, nous remarquons qu’il y a 9 valeurs pour X ; par conséquent, le nombre de points de division est 8 (n = 8, un nombre pair), ce qui permet d’utiliser la formule composite de Simpson.
+//////
+Figure 12:Code de formule composite de Simpson
+/////
+Figure 13:Valeurs de vitesse
+La vitesse que nous avons obtenue est 
