@@ -49,4 +49,6 @@ Figure 8:Code de la commande spline
 //////
 Figure 9:Valeurs de vitesse
 
+6:我认为la fonction spline cubique更好
+fonctions affines par morceaux的劣势是构造的函数不平滑，wu'cha
 
