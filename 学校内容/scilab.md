@@ -37,5 +37,12 @@ Figure 5:Code de la commande Interp1
 Figure 6 le graphique de la fonction linéaire par morceaux
 
 4:Grâce à la fonction affine par morceaux, nous avons obtenu les vitesses de la voiture aux deux instants suivants.
+
 Figure 7: Valeurs de vitesse 
-我们可以发现，得到的值略小于我们通过插项多项式
+我们可以发现，得到的值略小于我们通过插值多项式计算出来的值
+Nous pouvons constater que la valeur obtenue est légèrement inférieure à celle calculée à l’aide du interpolation polynomiale.
+
+5：下图是样条命令的代码及其对应的图形
+Le schéma suivant est le code de la commande spline et le graphe
+Figure 8:Code de la commande spline
+
