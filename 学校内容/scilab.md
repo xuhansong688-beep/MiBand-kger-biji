@@ -73,3 +73,5 @@ Figure 12:Code de formule composite de Simpson
 /////
 Figure 13:Valeurs de vitesse
 La vitesse que nous avons obtenue est 
+
+
