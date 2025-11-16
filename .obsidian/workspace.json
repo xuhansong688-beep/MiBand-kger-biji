@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学校内容/scilab.md",
+                "file": "学校内容/未命名.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "scilab"
+              "title": "未命名"
             }
           }
         ]
@@ -192,12 +192,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff6306a1cf829394",
+  "active": "f4e33c56255cd19f",
   "lastOpenFiles": [
+    "学校内容/scilab.md",
+    "学校内容/未命名.md",
     "Pasted image 20251023202201.png",
     "Pasted image 20251023202003.png",
     "Pasted image 20251023201950.png",
-    "学校内容/scilab.md",
     "Pasted image 20251023205826.png",
     "Pasted image 20251023202434.png",
     "Pasted image 20251023202254.png",
