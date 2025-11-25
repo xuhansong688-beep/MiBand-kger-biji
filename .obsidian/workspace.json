@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学校内容/MATLAB.md",
+                "file": "学校内容/scilab.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "MATLAB"
+              "title": "scilab"
             }
           }
         ],
@@ -217,10 +217,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f50a848d29b0bcb3",
+  "active": "f4e33c56255cd19f",
   "lastOpenFiles": [
-    "学校内容/scilab.md",
     "学校内容/MATLAB.md",
+    "学校内容/scilab.md",
     "Pasted image 20251023202201.png",
     "Pasted image 20251023202003.png",
     "Pasted image 20251023201950.png",
