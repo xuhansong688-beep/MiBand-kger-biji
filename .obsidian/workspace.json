@@ -54,21 +54,9 @@
               "icon": "lucide-file",
               "title": "scilab"
             }
-          },
-          {
-            "id": "3ecac6165fa23f37",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.6"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.10.6"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -229,7 +217,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3ecac6165fa23f37",
+  "active": "f50a848d29b0bcb3",
   "lastOpenFiles": [
     "学校内容/MATLAB.md",
     "学校内容/scilab.md",
