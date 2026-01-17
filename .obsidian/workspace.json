@@ -35,12 +35,24 @@
             "id": "f50a848d29b0bcb3",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20251023201950.png"
+                "file": "C++学习/B站C++课程.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251023201950"
+              "icon": "lucide-file",
+              "title": "B站C++课程"
             }
           }
         ],
@@ -207,21 +219,22 @@
   },
   "active": "f50a848d29b0bcb3",
   "lastOpenFiles": [
-    "Pasted image 20251023202434.png",
-    "Pasted image 20251023202201.png",
+    "未命名.canvas",
+    "C++学习/B站C++课程.md",
+    "C++学习",
     "Pasted image 20251023202003.png",
     "Pasted image 20251023201950.png",
+    "Pasted image 20251023202434.png",
+    "Pasted image 20251023202201.png",
     "学校内容/scilab.md",
     "学校内容/MATLAB.md",
     "Pasted image 20251023205826.png",
     "Pasted image 20251023202254.png",
     "小米手环凯格尔学习/js学习.md",
     "README.md",
-    "未命名.canvas",
     "学校内容/UNIX.md",
     "学校内容/smash.md",
     "小米手环凯格尔学习/GitHub及git的初步学习.md",
-    "未命名",
     "学校内容",
     "小米手环凯格尔学习/学习安排时间规划.md",
     "小米手环凯格尔学习/obsidian指令大全.md",
