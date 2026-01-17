@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++学习/B站C++代码学习.md",
+                "file": "大冰聊天文案.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "B站C++代码学习"
+              "title": "大冰聊天文案"
             }
           }
         ]
@@ -192,10 +192,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4e33c56255cd19f",
+  "active": "e027d8f5ac00225e",
   "lastOpenFiles": [
-    "大冰聊天文案.md",
+    "README.md",
     "C++学习/B站C++代码学习.md",
+    "大冰聊天文案.md",
     "未命名.canvas",
     "C++学习",
     "Pasted image 20251023202003.png",
@@ -207,7 +208,6 @@
     "Pasted image 20251023205826.png",
     "Pasted image 20251023202254.png",
     "小米手环凯格尔学习/js学习.md",
-    "README.md",
     "学校内容/UNIX.md",
     "学校内容/smash.md",
     "小米手环凯格尔学习/GitHub及git的初步学习.md",
