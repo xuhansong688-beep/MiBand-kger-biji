@@ -1,9 +1,14 @@
 # 基础语法
-
-随机数：
+#### 部分用法
+###### 随机数：
 ```C++
 #include <ctime>
 srand((unsigned int)time(NULL));
+```
+###### 清屏退出
+```C++
+system("pause");
+system("cls");
 ```
 
 #### 引用

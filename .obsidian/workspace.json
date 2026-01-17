@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "大冰聊天文案.md",
+                "file": "C++学习/B站C++代码学习.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "大冰聊天文案"
+              "title": "B站C++代码学习"
             }
           }
         ]
@@ -194,9 +194,9 @@
   },
   "active": "e027d8f5ac00225e",
   "lastOpenFiles": [
+    "大冰聊天文案.md",
     "README.md",
     "C++学习/B站C++代码学习.md",
-    "大冰聊天文案.md",
     "未命名.canvas",
     "C++学习",
     "Pasted image 20251023202003.png",
