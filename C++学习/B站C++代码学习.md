@@ -118,4 +118,19 @@ cout << "A" << p - > A << "B" << p - > B << endl;
 - 全局变量，全局常量，静态变量 static，字符串常量--地址接近；局部变量，局部常量地址接近
 - 不要返回局部变量的地址，该内存已经不属于你
 #### 堆区
+```C++
+int * func(){
+int *a =new int(10);//new返回该数据类型的指针
+return a;
+}
+void test(){
+int *p = func();
+cout << *p <<endl;
+}
+//delete a 来释放
+int *arr = new int [10];
+//释放数组 delete[] arr
+
+
+```
 
