@@ -85,8 +85,17 @@ int * const p =&b;//指向不能改，值可以改
 
 #### 结构体
 ```C++
-struct Student{};//stu3
-struct Studnet s1 = {A,B,C};
-struct Student arry1[2] = {{1},{2},{3}}
-
+struct Student {}; //stu3
+struct Studnet s1 = {
+    A,
+    B,
+    C
+};
+struct Student arry1[2] = {
+    {A1,A2,A3},
+    {2},
+    {3}
+}
+struct * s2 = & s1;
+cout << "A" << s2 - > A << "B" << s2 - > B << endl;
 ```
