@@ -6,5 +6,21 @@
       ],
       "key": "Z"
     }
+  ],
+  "obsidian-format-code:format-prettier-TypeScript": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "A"
+    }
+  ],
+  "obsidian-linter:lint-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "A"
+    }
   ]
 }
