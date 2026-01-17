@@ -77,7 +77,6 @@ cout<<"二维数组第一个数字首地址"<<(int)&arr[0][0]<<endl;
 #### 类和对象
 封装，继承，多态
 ##### 封装
-
 设置一个典型的类，来进行封装，对外部方便调用
 ```C++
 class Stu {
@@ -91,16 +90,17 @@ class Stu {
         age = a;
     }
     void playniu() {
-        cout << "我要打篮球" << age << endl;
+        cout << "我要打篮球" << age << name << endl;
     }
 }
 int main() {
-    Stu xu;//对象
+    Stu xu;//对象（实例化）
     strcpy(xu.name, "niu");
     xu.setage(20);
-    xu.playniu();
+    xu.playniu("xuhansong");
 }
 ```
+
 #### 指针
 指针的地址都是4个字节 
 ```C++
