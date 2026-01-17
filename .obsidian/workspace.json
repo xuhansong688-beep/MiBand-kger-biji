@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "B站C++代码学习"
             }
+          },
+          {
+            "id": "e027d8f5ac00225e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "大冰聊天文案.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "大冰聊天文案"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -63,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Code Format",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,8 +109,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -193,10 +217,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4f1f95ac46eb7cb6",
+  "active": "e027d8f5ac00225e",
   "lastOpenFiles": [
-    "未命名.canvas",
     "C++学习/B站C++代码学习.md",
+    "大冰聊天文案.md",
+    "未命名.canvas",
     "C++学习",
     "Pasted image 20251023202003.png",
     "Pasted image 20251023201950.png",
