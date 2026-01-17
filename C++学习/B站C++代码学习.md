@@ -82,3 +82,11 @@ int * const p =&b;//指向不能改，值可以改
 //已经是地址了，数组都不需要
 
 ```
+
+#### 结构体
+```C++
+struct Student{};//stu3
+struct Studnet s1 = {A,B,C};
+struct Student arry1[2] = {{1},{2},{3}}
+
+```
