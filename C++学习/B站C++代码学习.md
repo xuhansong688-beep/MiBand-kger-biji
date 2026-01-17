@@ -37,3 +37,26 @@ int arr4[5] = {0};
 ```
 
 #### 类
+she
+```C++
+class Stu {
+    private: 
+    int age;
+    int id;
+    public: 
+    char name[20];
+    //对于private变量，会使用get和set来进行数据的定义
+    void setage(int a) {
+        age = a;
+    }
+    void playniu() {
+        cout << "我要打篮球" << age << endl;
+    }
+}
+int main() {
+    Stu xu;
+    strcpy(xu.name, "niu");
+    xu.setage(20);
+    xu.playniu();
+}
+```
