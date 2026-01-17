@@ -18,7 +18,27 @@ int i = 10;
 int &niubi = i;
 niubi = 20;//i = 20
 ```
+- 引用完以后不会改变，再次等于是赋值
+- 应用必须初始化
+- 子程序引用的时候，形参会修饰实参
+```C++
+#include <iostream>
+struct Player {
+    int level = 1;
+};
+// 注意这里的 &，表示返回的是引用
+int& getLevel(Player& p) {
+    return p.level; 
+}
+int main() {
+    Player myHero;
+    // 震撼的操作来了：函数调用居然在等号左边！
+    getLevel(myHero) = 50; 
+    std::cout << "英雄等级变成了: " << myHero.level; // 输出 50
+    return 0;
+}
 
+```
 
 #### 数组
 
