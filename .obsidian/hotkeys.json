@@ -15,7 +15,7 @@
       "key": "A"
     }
   ],
-  "obsidian-linter:lint-file": [
+  "simple-code-formatter:simple_code_formatter": [
     {
       "modifiers": [
         "Mod"
