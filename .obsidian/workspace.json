@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++学习/B站C++课程.md",
+                "file": "C++学习/B站C++代码学习.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "B站C++课程"
+              "title": "B站C++代码学习"
             }
           }
         ],
@@ -220,7 +220,7 @@
   "active": "f50a848d29b0bcb3",
   "lastOpenFiles": [
     "未命名.canvas",
-    "C++学习/B站C++课程.md",
+    "C++学习/B站C++代码学习.md",
     "C++学习",
     "Pasted image 20251023202003.png",
     "Pasted image 20251023201950.png",
