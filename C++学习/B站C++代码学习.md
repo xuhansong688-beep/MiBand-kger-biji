@@ -1,5 +1,11 @@
 # 基础语法
 
+随机数：
+```C++
+#include <ctime>
+srand((unsigned int)time(NULL));
+```
+
 #### 引用
 引用的主要用法旨在不同的位置使用相同的变量
 ```
@@ -98,4 +104,10 @@ struct Student arry1[2] = {
 }
 struct * s2 = & s1;
 cout << "A" << s2 - > A << "B" << s2 - > B << endl;
+
+void print(Student *p){
+p->A =B;
+cout << "A" << p - > A << "B" << p - > B << endl;
+}
 ```
+
