@@ -127,7 +127,19 @@ class person {
     }
 }
 ```
-**调用：kuo'h**
+调用：括号，显示，隐式转换**
+括号法：
+```C++
+person p1;//不要小括号
+person p2(10);//有参构造
+person p3(p2);//拷贝构造
+```
+显示法：
+```C++
+person p2 = person(10);
+person p3 = person(p2);
+person(10);//匿名对象，会直接结束
+```
 
 2.析构函数进行清理 
 ```C++
