@@ -176,8 +176,7 @@ int main() {
     xu.playniu("xuhansong");
 }
 ```
-##### 对象的初始化和清理
-###### 构造函数进行初始化
+##### 构造函数进行初始化
 ```C++
 class person {
     public: person() {
@@ -190,7 +189,7 @@ class person {
 - 构造函数可以有参数，可以发生重载
 - 创建对象，构造函数会自动调用
 - 实例化自动运行
-**分类：有参无参，普通拷贝
+###### 分类：有参无参，普通拷贝
 ```C++
 class person {
     public: int age;
@@ -223,8 +222,9 @@ person p5 =p4;
 ```
 ==有参无默认，有拷贝==
 ==有拷贝其他都无==
-**深拷贝浅拷贝**
-深拷贝和
+###### 深拷贝浅拷贝
+深拷贝和浅拷贝的本质区别是
+深拷贝通过自己写一个拷贝函数，并在其中使用新的newint来存储一个被拷贝对象的指针指向大小来返回一个地址
 ```C++
 class person {
     //......
@@ -244,7 +244,18 @@ class person {
     int* m_height;
 }
 ```
-###### 析构函数进行清理 
+###### 初始化列表
+```C++
+Person(int a, int b, int c) :m_A(a), m_B(b), m_C(c) {}
+	void PrintPerson() {
+		cout << "mA:" << m_A << endl;
+		cout << "mB:" << m_B << endl;
+		cout << "mC:" << m_C << endl;
+	}
+```
+###### 类对象对类成员
+先调用类成员的构造，再来大的
+##### 析构函数进行清理 
 ```C++
 class person {
     public: 
