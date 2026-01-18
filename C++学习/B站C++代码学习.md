@@ -281,43 +281,42 @@ person(int age) {
 }
 int age;
 ```
-2.返回对象本身*this
+2.返回对象本身*this*
 ```C++
 class Person {
     public:
-
         Person(int age) {
             //1、当形参和成员变量同名时，可用this指针来区分
             this - > age = age;
         }
-
-    Person & PersonAddPerson(Person p) {
+    Person& PersonAddPerson(Person p) {//返回是值，创建新的对象
         this - > age += p.age;
         //返回对象本身
-        return * this;
+        return *this;
     }
-
     int age;
 };
-
 void test01() {
     Person p1(10);
     cout << "p1.age = " << p1.age << endl;
-
     Person p2(10);
     p2.PersonAddPerson(p1).PersonAddPerson(p1).PersonAddPerson(p1);
     cout << "p2.age = " << p2.age << endl;
 }
-
 int main() {
-
     test01();
-
     system("pause");
-
     return 0;
 }
 ```
+###### 常函数和常对象
+this的本质是一个person * const this
+指向是不可以变化的，如果希望得到一个值也不可以改的常函数，则在{前面写一个const，变成常函数
+如果还有想修改的值，则使用mutable int来
+```
+
+```
+
 ##### 析构函数进行清理 
 ```C++
 class person {
