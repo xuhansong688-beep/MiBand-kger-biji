@@ -100,6 +100,20 @@ int main() {
     xu.playniu("xuhansong");
 }
 ```
+###### 对象的初始化和清理
+构造函数进行初始化
+```C++
+class person {
+    public: Person() {
+        cout << "gouzaohanshu diaoyong" << endl;
+    }
+}
+```
+- 函数名和类名相同
+- 构造函数可以有参数，可以发生重载
+- 构建对象，构造函数会自动调用
+- 
+1. 析构函数进行清理 
 
 #### 指针
 指针的地址都是4个字节 
