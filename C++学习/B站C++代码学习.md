@@ -261,13 +261,63 @@ Person(int a, int b, int c) :m_A(a), m_B(b), m_C(c) {}
 - 可以通过对象访问，也可以通过类名访问
 - 静态函数只能访问静态成员变量
 ```C++
+int person::A =10;
+static int A;
 person p;
 p.func();//对象
 person::func();//类名
 
 ```
 ##### C++对象模型和this指针
+###### 对象模型
+成员变量和成员函数分开存储
+基础都是1，static不占，int有以后就是4，1消失
+###### this指针
+1.解决名称冲突
+this指针指向被调用的成员函数 所属的对象
+```C++
+person(int age) {
+    this -> age = age
+}
+int age;
+```
+2.返回对象本身*this
+```C++
+class Person {
+    public:
 
+        Person(int age) {
+            //1、当形参和成员变量同名时，可用this指针来区分
+            this - > age = age;
+        }
+
+    Person & PersonAddPerson(Person p) {
+        this - > age += p.age;
+        //返回对象本身
+        return * this;
+    }
+
+    int age;
+};
+
+void test01() {
+    Person p1(10);
+    cout << "p1.age = " << p1.age << endl;
+
+    Person p2(10);
+    p2.PersonAddPerson(p1).PersonAddPerson(p1).PersonAddPerson(p1);
+    cout << "p2.age = " << p2.age << endl;
+}
+
+int main() {
+
+    test01();
+
+    system("pause");
+
+    return 0;
+}
+```
 ##### 析构函数进行清理 
 ```C++
 class person {
