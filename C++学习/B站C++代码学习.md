@@ -373,6 +373,7 @@ void test01() {
 friend void Goodgay::visit();
 ##### 运算符重载
 对已有的运算符进行重新定义，赋予新的功能对自定义变量操作
+###### 加法
 成员函数，写在类里面
 ```C++
 person operator + (person & p) {
@@ -387,13 +388,27 @@ person p3 = p1+p2;
 ```
 全局函数，写在外面
 ```C++
-person operator + (person & p1,person &p2) {
+person operator + (person &p1, person &p2) {
     person temp;
     temp.m_A = p1.m_A + p2.m_A;
     temp.m_B = p1.m_B + p2.m_B;
     return temp
 }
+//可以直接使用 
+person p3 = operator+(p1, p2);
+person p3 = p1 + p2;
 ```
+###### 左移运算
+目的是直接输出
+只能利用全局函数
+```C++
+ostream operator <<(ostream &cout,person &p){
+cout <<p.m_A<<p.m_B;
+return cout;
+}//记得配合友元
+```
+
+
 ##### 析构函数进行清理 
 ```C++
 class person {
