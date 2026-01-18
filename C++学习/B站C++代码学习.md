@@ -152,7 +152,7 @@ int func(int a = 12, int = 15) {}
 
 ### 类和对象
 封装，继承，多态
-##### 封装
+#### 封装
 设置一个典型的类，来进行封装，对外部方便调用
 ```C++
 class Stu {
@@ -274,7 +274,7 @@ person::func();//类名
 基础都是1，static不占，int有以后就是4，1消失
 ###### this指针
 1.解决名称冲突
-this指针指向被调用的成员函数 所属的对象
+this指针指向被调用的成员函数 所属的对象，防止名字一样
 ```C++
 person(int age) {
     this -> age = age
@@ -480,6 +480,40 @@ int main() {
 }
 ```
 ###### 关系运算符
+```C++
+bool operator==(Person & p)
+	{
+		if (this->m_Name == p.m_Name && this->m_Age == p.m_Age)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+```
+###### 调用运算符
+仿函数
+```C++
+class MyAdd
+{
+public:
+	int operator()(int v1, int v2)
+	{
+		return v1 + v2;
+	}
+};
+void test02()
+{
+	MyAdd add;
+	int ret = add(10, 10);
+	cout << "ret = " << ret << endl;
+	//匿名对象调用  
+	cout << "MyAdd()(100,100) = " << MyAdd()(100, 100) << endl;
+}
+```
 
 ##### 析构函数进行清理 
 ```C++
@@ -496,3 +530,4 @@ class person {
 - 不能有参
 - 自动执行
 - 在子程序结束以后执行，主程序一直不动
+#### 继承
