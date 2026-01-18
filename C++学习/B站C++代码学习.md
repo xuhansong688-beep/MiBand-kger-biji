@@ -138,7 +138,12 @@ person p3(p2);//拷贝构造
 ```C++
 person p2 = person(10);
 person p3 = person(p2);
-person(10);//匿名对象，会直接结束
+person(10);//匿名对象，会直接结束不要用拷贝构造
+```
+隐式转换：
+```C++
+person p4 = 10;
+person p5 =p4;
 ```
 
 2.析构函数进行清理 
