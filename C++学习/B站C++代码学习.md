@@ -319,8 +319,24 @@ const person p;
 p.B =100;如果B是mutable则可以修改
 常对象只能调用常函数
 ##### 友元
+###### 全局函数做友元
  某个全局函数，在类里面friend一下定义，可以访问私有内容
- 
+```C++
+#include <iostream> 
+#include <string> 
+using namespace std;
+class Building { // 声明goodGay为友元函数，参数匹配引用类型 
+friend void goodGay(Building& building);
+}
+void goodGay(Building& building) { // 引用用 . 访问成员，而非指针的 -> 
+cout << "好基友访问：" << building.m_SittingRoom << endl; cout << "好基友访问：" << building.m_BedRoom << endl; }
+
+Building building; 
+// 调用函数：直接传对象名，不用加 & 取地址 
+goodGay(building);
+```
+###### 类做友元
+
 ##### 析构函数进行清理 
 ```C++
 class person {
