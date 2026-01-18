@@ -409,17 +409,30 @@ return cout;
 ```
 ###### ++前后运算
 ```C++
-MyInteger & operator++() {
+//private
+person & operator++() {
     m_mun++;
     return * this
-}//avance
-MyInteger operator++(int) {//important int不要引用
-    person temp =*this
+} //avance
+person operator++(int) { //important int不要引用
+    person temp = * this
     m_mun++;
     return temp
 }
 
+//全局的
+Counter& operator++(Counter& c) { 
+c.value++; // 直接修改传入的对象 
+return c; // 返回引用 
+}
+
+Counter operator++(Counter & c, int) {
+    Counter temp = c; // 1. 拷贝一份原有的状态 
+    c.value++; // 2. 修改原对象
+    return temp; // 3. 返回修改前的副本 
+}
 ```
+###### 赋值运算符
 
 ##### 析构函数进行清理 
 ```C++
