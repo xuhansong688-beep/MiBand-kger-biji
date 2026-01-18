@@ -218,7 +218,7 @@ person(10);//匿名对象，会直接结束不要用拷贝构造
 隐式转换：
 ```C++
 person p4 = 10;
-person p5 =p4;
+person p5 = p4;
 ```
 ==有参无默认，有拷贝==
 ==有拷贝其他都无==
@@ -433,6 +433,53 @@ Counter operator++(Counter & c, int) {
 }
 ```
 ###### 赋值运算符
+因为在直接等于的情况下，出现完全复制，导致堆区的释放出现问题。两个会同时释放一个位置，不合理，所以要用深复制。
+```C++
+class Person {
+    public:
+        Person(int age) {
+            //将年龄数据开辟到堆区
+            m_Age = new int(age);
+        }
+    //重载赋值运算符 
+    Person & operator = (Person & p) {
+        if (m_Age != NULL) {
+            delete m_Age;
+            m_Age = NULL;
+        }
+        //编译器提供的代码是浅拷贝
+        //m_Age = p.m_Age;
+        //提供深拷贝 解决浅拷贝的问题
+        m_Age = new int( * p.m_Age);
+        //返回自身
+        return * this;
+    }
+    ~Person() {
+        if (m_Age != NULL) {
+            delete m_Age;
+            m_Age = NULL;
+        }
+    }
+    //年龄的指针
+    int * m_Age;
+};
+void test01() {
+    Person p1(18);
+    Person p2(20);
+    Person p3(30);
+    p3 = p2 = p1; //赋值操作
+    cout << "p1的年龄为：" << * p1.m_Age << endl;
+    cout << "p2的年龄为：" << * p2.m_Age << endl;
+    cout << "p3的年龄为：" << * p3.m_Age << endl;
+}
+int main() {
+    test01();
+    system("pause");
+
+    return 0;
+}
+```
+###### 关系运算符
 
 ##### 析构函数进行清理 
 ```C++
