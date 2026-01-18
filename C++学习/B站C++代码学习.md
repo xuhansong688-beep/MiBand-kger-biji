@@ -101,20 +101,49 @@ int main() {
 }
 ```
 ###### 对象的初始化和清理
-构造函数进行初始化
+1.构造函数进行初始化
 ```C++
 class person {
-    public: Person() {
+    public: person() {
         cout << "gouzaohanshu diaoyong" << endl;
     }
 }
 ```
 - 函数名和类名相同
+- 没有返回值，不写void
 - 构造函数可以有参数，可以发生重载
-- 构建对象，构造函数会自动调用
-- 
-1. 析构函数进行清理 
+- 创建对象，构造函数会自动调用
+- 实例化自动运行
+**分类：有参无参，普通拷贝
+```C++
+class person {
+    public: int age;
+    person(int a) { //有参
+        age = a;
+        cout << "gouzaohanshu diaoyong" << endl;
+    }
+    person(const person & p) {//拷贝
+        age = p.age
+    }
+}
+```
+**调用：kuo'h**
 
+2.析构函数进行清理 
+```C++
+class person {
+    public: 
+    person() {
+            cout << "gouzaohanshu diaoyong" << endl;
+        }
+        ~person() {
+            cout << "xigou" << endl
+        }
+}
+```
+- 不能有参
+- 自动执行
+- 在子程序结束以后执行，主程序一直不动
 #### 指针
 指针的地址都是4个字节 
 ```C++
