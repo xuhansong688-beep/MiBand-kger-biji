@@ -224,6 +224,25 @@ person p5 =p4;
 ==有拷贝其他都无==
 **深拷贝浅拷贝
 
+```C++
+class person {
+    //......
+    person(int age, int height) {
+            m_age = age;
+            m_height = new int(height);
+        }
+
+    ~person() {
+        if (m_meight != NULL) {
+            delete m_meight;
+            m_height = NULL;
+        }
+    }
+
+    int m_age;
+    int* m_height;
+}
+```
 ###### 析构函数进行清理 
 ```C++
 class person {
