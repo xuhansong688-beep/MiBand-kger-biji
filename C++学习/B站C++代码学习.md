@@ -402,12 +402,24 @@ person p3 = p1 + p2;
 目的是直接输出
 只能利用全局函数
 ```C++
-ostream operator <<(ostream &cout,person &p){
+ostream &operator <<(ostream &cout,person &p){
 cout <<p.m_A<<p.m_B;
 return cout;
 }//记得配合友元
 ```
+###### ++前后运算
+```C++
+MyInteger & operator++() {
+    m_mun++;
+    return * this
+}//avance
+MyInteger operator++(int) {//important int不要引用
+    person temp =*this
+    m_mun++;
+    return temp
+}
 
+```
 
 ##### 析构函数进行清理 
 ```C++
