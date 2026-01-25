@@ -261,8 +261,9 @@ Person(int a, int b, int c) :m_A(a), m_B(b), m_C(c) {}
 - 可以通过对象访问，也可以通过类名访问
 - 静态函数只能访问静态成员变量
 ```C++
+static int A;//函数里面
 int person::A =10;
-static int A;
+static void func()
 person p;
 p.func();//对象
 person::func();//类名
@@ -545,3 +546,14 @@ class son :jichengfangshi father
 跳转文件路径 cd 具体路径下
 查看命令
 cl /dl reportSingleClassLayout类名 文件名
+##### 继承中构造和析构的顺序
+父 - 子 - 子结束 - 父结束
+##### 同名成员处理
+```C++
+s.A //son
+s.Base::A//father
+```
+如果子类有和父类相同的，会全部隐藏
+例如重载的时候，不能直接给数
+##### 继承中的静态同名
+
