@@ -566,3 +566,12 @@ s::f::a
 ```C++
 class son :public f1,protect f2
 ```
+##### 菱形继承
+```C++
+class son :virtual public f1
+```
+虚继承，实际上是记录了一个地址偏移量，可以很快找到需要的内容
+虚基类指针，指向一个虚基类表，表中记录了数据，是地址偏移量
+![[Pasted image 20260125232617.png]]
+
+#### 多态
