@@ -533,9 +533,15 @@ class person {
 #### 继承
 ##### 基础语法
 ```C++
-class son :public father
+class son :jichengfangshi father
 //使用的时候，直接调用函数就行
 ```
 ##### 继承方式
 - 父的私有，都不能使用
 - 父的其他，如果是public，照旧，如果其他，都变化
+##### 对象模型
+利用开发人员命令提示工具查看对象模型
+跳转盘符 F:
+跳转文件路径 cd 具体路径下
+查看命令
+cl /dl reportSingleClassLayout类名 文件名
