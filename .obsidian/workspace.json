@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++学习/B站C++代码学习.md",
+                "file": "C++学习/C++核心编程.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "B站C++代码学习"
+              "title": "C++核心编程"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "类对象",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,8 +84,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -195,9 +194,9 @@
   },
   "active": "e027d8f5ac00225e",
   "lastOpenFiles": [
+    "C++学习/B站C++代码学习.md",
     "Pasted image 20260125232617.png",
     "C++学习/C++核心编程.md",
-    "C++学习/B站C++代码学习.md",
     "小米手环凯格尔学习/js学习.md",
     "大冰聊天文案.md",
     "README.md",
