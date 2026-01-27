@@ -54,9 +54,33 @@
               "icon": "lucide-file",
               "title": "C++核心编程"
             }
+          },
+          {
+            "id": "581303a017d2cfbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "职工管理系统.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "职工管理系统"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -217,10 +241,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5787be2a46bbb1bb",
+  "active": "581303a017d2cfbd",
   "lastOpenFiles": [
-    "C++学习/B站C++代码学习.md",
     "C++学习/C++核心编程.md",
+    "职工管理系统.md",
+    "C++学习/B站C++代码学习.md",
     "Pasted image 20260125232617.png",
     "小米手环凯格尔学习/js学习.md",
     "大冰聊天文案.md",
