@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "new",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -195,8 +195,8 @@
   "active": "e027d8f5ac00225e",
   "lastOpenFiles": [
     "C++学习/B站C++代码学习.md",
-    "Pasted image 20260125232617.png",
     "C++学习/C++核心编程.md",
+    "Pasted image 20260125232617.png",
     "小米手环凯格尔学习/js学习.md",
     "大冰聊天文案.md",
     "README.md",
