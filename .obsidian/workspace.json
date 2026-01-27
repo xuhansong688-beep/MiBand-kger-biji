@@ -13,6 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "C++学习/B站C++代码学习.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "B站C++代码学习"
+            }
+          },
+          {
+            "id": "5787be2a46bbb1bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "C++学习/C++核心编程.md",
                 "mode": "source",
                 "source": false,
@@ -31,7 +55,8 @@
               "title": "C++核心编程"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,7 +217,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e027d8f5ac00225e",
+  "active": "5787be2a46bbb1bb",
   "lastOpenFiles": [
     "C++学习/B站C++代码学习.md",
     "C++学习/C++核心编程.md",
