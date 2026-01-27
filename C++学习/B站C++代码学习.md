@@ -619,4 +619,52 @@ cout<<"lalalal"<<endl;
 ### 文件操作
 头文件要写#include < fstream >
 
+|    打开方式     | 解释            |
+| :---------: | ------------- |
+|   ios::in   | 为读文件而打开文件     |
+|  ios::out   | 为写文件而打开文件     |
+|  ios::ate   | 初始位置：文件尾      |
+|  ios::app   | 追加方式写文件       |
+| ios::trunc  | 如果文件存在先删除，再创建 |
+| ios::binary | 二进制方式         |
+
 #### 写
+
+```C++
+class Person
+{
+public:
+	char m_Name[64];
+	int m_Age;
+};
+void test01()
+{
+
+	ofstream ofs("person.txt", ios::out | ios::binary);
+	Person p = {"张三"  , 18};
+	ofs.write((const char *)&p, sizeof(p));//要写char*
+	ofs.close();
+}
+
+```
+
+#### 读
+```C++
+class Person
+{
+public:
+	char m_Name[64];
+	int m_Age;
+};
+void test01()
+{
+	ifstream ifs("person.txt", ios::in | ios::binary);
+	if (!ifs.is_open())
+	{
+		cout << "文件打开失败" << endl;
+	}
+	Person p;
+	ifs.read((char *)&p, sizeof(p));
+	cout << "姓名： " << p.m_Name << " 年龄： " << p.m_Age << endl;
+}
+```
