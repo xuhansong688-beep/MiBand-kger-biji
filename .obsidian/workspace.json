@@ -55,8 +55,7 @@
               "title": "C++核心编程"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -217,10 +216,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "581303a017d2cfbd",
+  "active": "e027d8f5ac00225e",
   "lastOpenFiles": [
-    "C++学习/B站C++代码学习.md",
     "C++学习/C++核心编程.md",
+    "C++学习/B站C++代码学习.md",
     "职工管理系统.md",
     "Pasted image 20260125232617.png",
     "小米手环凯格尔学习/js学习.md",

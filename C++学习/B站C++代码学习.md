@@ -598,7 +598,7 @@ class son :virtual public f1
 ![[Pasted image 20260125232617.png]]
 
 #### 多态
-##### 基础使用
+##### 使用
 - 子类重写父类中的虚函数
 - 父类指针指向或引用子类对象
 ```C++
@@ -608,4 +608,15 @@ void DoSpeak(Animal & animal)
 	animal.speak();//父子中都有speak
 }
 ```
-- 如果涉及到在调用函数中
+- 如果涉及到在调用函数或者构造函数中使用new的情况，都要用指针指向
+当类中使用了new需要delate掉，但是父类如果也delate的话，子类的析构函数无法继续调用
+```C++
+virtual ~fu() = 0;
+fu::~fu(){
+cout<<"lalalal"<<endl;
+}
+```
+### 文件操作
+头文件要写#include < fstream >
+
+#### 写
