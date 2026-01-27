@@ -598,3 +598,14 @@ class son :virtual public f1
 ![[Pasted image 20260125232617.png]]
 
 #### 多态
+##### 基础使用
+- 子类重写父类中的虚函数
+- 父类指针指向或引用子类对象
+```C++
+virtual void speak() = 0;//无法实例化对象
+void DoSpeak(Animal & animal)
+{
+	animal.speak();//父子中都有speak
+}
+```
+- 如果涉及到在调用函数中
