@@ -102,4 +102,15 @@ def print_grades(self):
         print(f"学生{self.name}（学号：{self.student_id}）的成绩为：")
         for course in self.grades:
             print(f"{course}: {self.grades[course]}分")
+
+#继承
+class Mammal:
+	def _init_(self,name,sex):
+	
+	
+class cat(Mammal):
+	def _init_(self,name,sex):
+	super()._init_(name,sex)
+	self.has_tail = True
 ```
+###### 文件操作
