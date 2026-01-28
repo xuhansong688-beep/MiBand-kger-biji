@@ -9,5 +9,11 @@ shoplist.append("fenetre")
 max,min,shorted#排序
 
 #字典内容
+zidian = {key:contenu，
+          key2:contenu}
+          
+if A in zidian
 
+#元组
+yuanzu = ("yoann",32)#作为key
 ```
