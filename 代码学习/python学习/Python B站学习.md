@@ -93,5 +93,13 @@ class stu:
 		self.num  = number
 		self.add  = address
 
-studen
+student1 = stu("yoann",10010,"elie cartan")
+print(f{student1.name})
+
+#类内部函数调用
+def print_grades(self):
+        # 打印学生的成绩信息
+        print(f"学生{self.name}（学号：{self.student_id}）的成绩为：")
+        for course in self.grades:
+            print(f"{course}: {self.grades[course]}分")
 ```
