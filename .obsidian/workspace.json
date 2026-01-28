@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++学习/B站C++代码学习.md",
+                "file": "代码学习/python学习/Python B站学习.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "B站C++代码学习"
+              "title": "Python B站学习"
             }
           },
           {
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++学习/C++核心编程.md",
+                "file": "代码学习/C++学习/C++核心编程.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -218,15 +218,18 @@
   },
   "active": "e027d8f5ac00225e",
   "lastOpenFiles": [
-    "C++学习/C++核心编程.md",
-    "C++学习/B站C++代码学习.md",
+    "代码学习/C++学习/B站C++代码学习.md",
+    "代码学习/python学习/Python B站学习.md",
+    "代码学习/python学习",
+    "代码学习",
+    "代码学习/C++学习/C++核心编程.md",
     "职工管理系统.md",
     "Pasted image 20260125232617.png",
     "小米手环凯格尔学习/js学习.md",
     "大冰聊天文案.md",
     "README.md",
     "未命名.canvas",
-    "C++学习",
+    "代码学习/C++学习",
     "Pasted image 20251023202003.png",
     "Pasted image 20251023201950.png",
     "Pasted image 20251023202434.png",
