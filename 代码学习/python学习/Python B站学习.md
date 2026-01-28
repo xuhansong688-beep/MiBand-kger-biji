@@ -125,5 +125,9 @@ with open("./data.txt", "r", encoding="utf-8") as f:
     for line in f:
         print(line.strip())
         
-
+#写 w强行，a追加
+with open("./data.txt", "r+", encoding="utf-8") as f:
+	f.write("老铁666\n")
+    for line in f:
+        print(line.strip())
 ```
