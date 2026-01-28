@@ -54,3 +54,10 @@ message_content2 = """律回春渐，新元肇启。
 新春快乐，{y}年大吉！""".format(y=year, n=name)
 ```
 ###### 代码函数
+```python
+def Init_xu(a,x)
+w=a**x
+a=x
+x=w
+#外面都改了
+```
