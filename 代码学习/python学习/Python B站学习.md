@@ -61,3 +61,37 @@ a=x
 x=w
 #外面都改了
 ```
+###### 循环
+```python
+for name in contacts:
+for i in range(1, 11):
+for i in range(len(contacts)): 
+print(f"第 {i+1} 个联系人：{contacts[i]}")
+while user_input != correct_password:
+    user_input = input("请输入密码：")
+    if user_input != correct_password:
+        print("密码错误，请重新输入！")
+```
+###### 库的使用
+```python
+#1
+import math
+math.midi()
+#2
+from math import median
+print(median([12,-5,36]))
+#3
+from statistic import *
+#后续直接用
+```
+###### 面向对象
+```python
+#构造函数
+class stu:
+	def _init_(self,name,number,address):
+		self.name = name
+		self.num  = number
+		self.add  = address
+
+studen
+```
