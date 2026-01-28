@@ -114,3 +114,16 @@ class cat(Mammal):
 	self.has_tail = True
 ```
 ###### 文件操作
+```python
+with open(".\data.txt","r") as f:#or
+f = open(".\data.txt","r")
+	lines = f.readlines()
+	for line in lines:
+		print(line)
+
+with open("./data.txt", "r", encoding="utf-8") as f:
+    for line in f:
+        print(line.strip())
+        
+
+```
