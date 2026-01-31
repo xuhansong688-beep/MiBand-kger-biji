@@ -18,3 +18,5 @@ memset(current_word, 0, sizeof(current_word));
 
 ### 通讯录设计
 #### 通讯录主要逻辑
+next和prev存的本质上是地址，每次也是赋值给地址，而不是改变指向的内容
+\*\*ppeople的原因是
