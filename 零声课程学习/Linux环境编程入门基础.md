@@ -34,4 +34,44 @@ memset(current_word, 0, sizeof(current_word));
 ### 线程池
 #### 互锁，自旋，原子操作
 ##### 互锁
-的本质是锁住了内容，其他线程来的时候会进入阻塞状态，离开cpu，进行了
+本质是锁住了内容，其他线程来的时候会进入阻塞状态。放弃cpu执行权限，进入等待队列，由系统唤醒线程
+- cpu占用率低，适合临界区耗时较长的情况
+```C
+pthread_mutex_t mutex;
+
+pthread_mutex_lock( & mutex);
+( * pcount) ++; 
+pthread_mutex_unlock( & mutex);
+
+pthread_mutex_init(&mutex, NULL);
+
+pthread_create(&threadid[i], NULL, thread_callback, &count)
+```
+##### 自旋
+不放弃执行权限，进入循环，直到解锁
+- 适合多cpu的情况，无上下文切换的开销
+```C
+pthread_spinlock_t spinlock;
+
+pthread_spin_lock( & spinlock);
+( * pcount) ++; 
+pthread_spin_unlock( & spinlock);
+
+pthread_spin_init(&spinlock, PTHREAD_PROCESS_SHARED);
+pthread_create(&threadid[i], NULL, thread_callback, &count)
+```
+##### 原子操作
+接收「内存地址、预期旧值、目标新值」三个参数，原子性完成「比较 - 交换」两步操作：内存实际值等于预期旧值则更新为新值（返回成功），否则不做修改（返回失败），全程不可中断。
+```C
+int inc(int * value, int add) {
+    int old;
+    __asm__ volatile(
+        "lock; xaddl %2, %1;"
+        : "=a"(old)
+        : "m"( * value), "a"(add)
+        : "cc", "memory"
+    );
+    return old;
+}
+
+```
