@@ -94,3 +94,7 @@ struct Worker *worker = (struct Worker *)arg;
 struct Worker *worker = (struct Worker *)malloc(sizeof(struct Worker));
 pthread_create(&tid, NULL, worker_func, worker);//这个worker本身就是地址所以不用取地址符
 ```
+#### 线程池主要逻辑
+- 主要分为了执行队列，任务队列，管理模块
+- 首先是初始化管理模块，并在其中初始化好所有的执行队列，里面用condwait全部等待加入任务后的condsignal，每当出现signal，便继续向下执行
+- 后续进行任务的使能，加入不同的任务，callbackji
