@@ -84,5 +84,11 @@ int inc(int * value, int add) {
 ```C
 pthread_cond_signal(&cond);//叫醒一个
 pthread_cond_broadcast(&cond);//叫醒所有，谁抢到算谁的
-
+```
+- void \*arg是一个万能指针，即在不知道输入类型的时候可以进行通用
+- 注意，传入时传入地址，使用时类型转换
+```C
+struct Worker *worker = (struct Worker *)arg;
+struct Worker *worker = (struct Worker *)malloc(sizeof(struct Worker));
+pthread_create(&tid, NULL, worker_func, worker);//这个worker本身就是地址所以不用取地址符
 ```
