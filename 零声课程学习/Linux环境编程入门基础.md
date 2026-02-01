@@ -84,6 +84,8 @@ int inc(int * value, int add) {
 ```C
 pthread_cond_signal(&cond);//叫醒一个
 pthread_cond_broadcast(&cond);//叫醒所有，谁抢到算谁的
+pthread_cond_wait(&worker->manager->cond, &worker->manager->mutex);
+//进入状态以后会阻塞掉，自动释放锁，如果接收到上面的信号，抢然后上锁，进入循环
 ```
 - void \*arg是一个万能指针，即在不知道输入类型的时候可以进行通用
 - 注意，传入时传入地址，使用时类型转换
