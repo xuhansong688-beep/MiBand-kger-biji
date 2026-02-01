@@ -643,7 +643,7 @@ void test01()
 	ofstream ofs("person.txt", ios::out | ios::binary);
 	Person p = {"张三"  , 18};
 	ofs.write((const char *)&p, sizeof(p));//要写char*
-	ofs.close();
+			ofs.close();
 }
 
 ```
