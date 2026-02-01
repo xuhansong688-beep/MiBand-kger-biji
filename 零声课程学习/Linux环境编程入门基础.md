@@ -77,3 +77,12 @@ int inc(int * value, int add) {
 ```
 #### 线程池
 分为任务队列，执行队列，锁
+##### 知识点解析
+- task->task_func = task_entry; // 简写（推荐，标准写法） 
+- task->task_func = &task_entry; // 显式取地址（合法，但多余
+- pthread_cond_t cond;用来通知的工具
+```C
+pthread_cond_signal(&cond);//叫醒一个
+pthread_cond_broadcast(&cond);//叫醒所有，谁抢到算谁的
+
+```
