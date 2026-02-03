@@ -112,3 +112,10 @@ pthread_create(&tid, NULL, worker_func, worker);//这个worker本身就是地址
 - 数据库（Database）是按照数据结构来组织、存储和管理数据的仓库。每个数据库都有一个或多个不同的 API 用于创建，访问，管理，搜索和复制所保存的数据
 - use mysql 实际含义是使用本机自带的database
 - 客户端发起请求，nodeserver实现业务逻辑，向数据库发送请求
+- sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf 实现远程配置的修改
+- 把bind修改为0.0.0.0
+- 127.0.0.1 回环地址是机器内部使用的地址，对外部不用的
+- sudo systemctl start mysql 开启服务器
+- sudo systemctl restart mysql 重启
+- stop 停止 status 查看状态 enable 开机自启
+- 
