@@ -111,4 +111,4 @@ pthread_create(&tid, NULL, worker_func, worker);//这个worker本身就是地址
 ### mysql数据库相关内容学习
 - 数据库（Database）是按照数据结构来组织、存储和管理数据的仓库。每个数据库都有一个或多个不同的 API 用于创建，访问，管理，搜索和复制所保存的数据
 - use mysql 实际含义是使用本机自带的database
-- 
+- 客户端发起请求，nodeserver实现业务逻辑，向数据库发送请求
