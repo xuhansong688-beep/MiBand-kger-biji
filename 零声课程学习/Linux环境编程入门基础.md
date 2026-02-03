@@ -115,7 +115,8 @@ pthread_create(&tid, NULL, worker_func, worker);//这个worker本身就是地址
 - 客户端发起请求，nodeserver实现业务逻辑，向数据库发送请求
 #### 初始化流程
 ##### 创建新用户
-- 
+- sudo vim debian.cnf查看原始文件，可以得到基础的用户名和密码
+- mysql -u 名字 -p密码（u后有空格，p后无空格）
 - 创建新用户：CREATE USER 'new_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_user_password';
 - 赋予权限：GRANT ALL PRIVILEGES ON *.* TO 'new_user'@'localhost';
 - 刷新：FLUSH PRIVILEGES;
@@ -132,3 +133,10 @@ pthread_create(&tid, NULL, worker_func, worker);//这个worker本身就是地址
 - 修改远程权限：UPDATE user SET host = '%' WHERE user = 'username' AND host = 'localhost';
 - 更新：FLUSH PRIVILEGES;
 - 验证修改结果：SELECT user, host FROM user WHERE user = 'username';
+#### mysql代码
+```mysql
+drop database name;#删除数据库
+create database name;#创建数据库
+use name;#使用数据库
+
+```
