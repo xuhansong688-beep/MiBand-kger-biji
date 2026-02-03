@@ -109,13 +109,26 @@ pthread_create(&tid, NULL, worker_func, worker);//这个worker本身就是地址
 - 首先是初始化管理模块，并在其中初始化好所有的执行队列，里面用condwait全部等待加入任务后的condsignal，每当出现signal，便继续向下执行
 - 后续进行任务的使能，加入不同的任务，callback会在抢占到锁以后自动向后执行。
 ### mysql数据库相关内容学习
+#### 知识点补充
 - 数据库（Database）是按照数据结构来组织、存储和管理数据的仓库。每个数据库都有一个或多个不同的 API 用于创建，访问，管理，搜索和复制所保存的数据
 - use mysql 实际含义是使用本机自带的database
 - 客户端发起请求，nodeserver实现业务逻辑，向数据库发送请求
+#### 初始化流程
+##### 创建新用户
+- 
+- 创建新用户：CREATE USER 'new_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_user_password';
+- 赋予权限：GRANT ALL PRIVILEGES ON *.* TO 'new_user'@'localhost';
+- 刷新：FLUSH PRIVILEGES;
+##### 赋予远程能力
 - sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf 实现远程配置的修改
 - 把bind修改为0.0.0.0
 - 127.0.0.1 回环地址是机器内部使用的地址，对外部不用的
 - sudo systemctl start mysql 开启服务器
 - sudo systemctl restart mysql 重启
 - stop 停止 status 查看状态 enable 开机自启
-- 
+- 使用root进入：mysql -u root -p
+- 修改「现有本地用户」的登录地址：
+- 连接数据库：USE mysql;
+- 修改远程权限：UPDATE user SET host = '%' WHERE user = 'username' AND host = 'localhost';
+- 更新：FLUSH PRIVILEGES;
+- 验证修改结果：SELECT user, host FROM user WHERE user = 'username';
