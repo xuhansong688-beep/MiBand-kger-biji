@@ -135,8 +135,10 @@ pthread_create(&tid, NULL, worker_func, worker);//这个worker本身就是地址
 - 验证修改结果：SELECT user, host FROM user WHERE user = 'username';
 #### mysql代码
 ```mysql
-drop database name;#删除数据库
-create database name;#创建数据库
-use name;#使用数据库
+drop database name_DB;#删除数据库
+create database name_DB;#创建数据库
+use name_DB;#使用数据库
+create table TB_name(
 
+);
 ```
