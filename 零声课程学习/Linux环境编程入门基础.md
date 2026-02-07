@@ -113,7 +113,7 @@ pthread_create(&tid, NULL, worker_func, worker);//这个worker本身就是地址
 - 数据库（Database）是按照数据结构来组织、存储和管理数据的仓库。每个数据库都有一个或多个不同的 API 用于创建，访问，管理，搜索和复制所保存的数据
 - use mysql 实际含义是使用本机自带的database
 - 客户端发起请求，nodeserver实现业务逻辑，向数据库发送请求
-#### 初始化流程
+#### 软件初始化
 ##### 创建新用户
 - sudo vim debian.cnf查看原始文件，可以得到基础的用户名和密码
 - mysql -u 名字 -p密码（u后有空格，p后无空格）
@@ -133,7 +133,7 @@ pthread_create(&tid, NULL, worker_func, worker);//这个worker本身就是地址
 - 修改远程权限：UPDATE user SET host = '%' WHERE user = 'username' AND host = 'localhost';
 - 更新：FLUSH PRIVILEGES;
 - 验证修改结果：SELECT user, host FROM user WHERE user = 'username';
-#### mysql代码
+#### mysql初始化
 ```mysql
 drop database name_DB;#删除数据库
 create database name_DB;#创建数据库
@@ -155,7 +155,11 @@ SET SQL_SAFE_UPDATES=0;
 DELETE FROM TB_XHS WHERE U_NAME =UNAME;
 SET SQL_SAFE_UPDATES =1;
 END&&
+
 CALL PROC_DELETE_USER('XHS');#使用该函数
 ```
-- 
+#### C语言中的 C API
+- `MYSQL mysql;`创建需要的句柄
+- MYSQL *mysql_init(MYSQL *mysql)
+- `mysql_real_query(handle, SQL_SELECT_TBL_USER, strlen(SQL_SELECT_TBL_USER))`
 - `mysql_stmt_fetch_column`，就保证有 `result.buffer_length` 长度的数据填入了 `buffer` 的对应位置
