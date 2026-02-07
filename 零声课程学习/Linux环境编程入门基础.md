@@ -216,3 +216,4 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 - `char *strtok(char *str, const char *delim);`按照后面分割，没有了返回NULL，后面是NULL开始，不是线程安全 
 #### 小知识
 - header->flags = htons(0x0100);计算机小端，服务器大端
+#
