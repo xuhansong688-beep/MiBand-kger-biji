@@ -181,5 +181,9 @@ fseek(fp, 0, SEEK_SET);
 ##### 预处理sql执行
 - `MYSQL_STMT *mysql_stmt_init(MYSQL *mysql)`初始化预处理语句句柄，用于执行带占位符的 SQL
 - `int mysql_stmt_prepare(MYSQL_STMT *stmt, const char *stmt_str, unsigned long length)`编译预处理 SQL 语句（含 ? 占位符）
-- 
+- `MYSQL_BIND`结构体是预处理的核心步骤，代表？的位置
+	- buffer_type数据类型 如`MYSQL_TYPE_LONG`,`MYSQL_TYPE_LONG_BLOB`传入的数据类型
+	- buffer内存地址，指向程序中存储数据实际地址，一般NULL
+	- length实际长度指针，存放到真实字节数
+	- buffer_length buffer装多少字节
 - `mysql_stmt_fetch_column`，就保证有 `result.buffer_length` 长度的数据填入了 `buffer` 的对应位置
