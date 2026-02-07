@@ -155,8 +155,7 @@ SET SQL_SAFE_UPDATES=0;
 DELETE FROM TB_XHS WHERE U_NAME =UNAME;
 SET SQL_SAFE_UPDATES =1;
 END&&
-
-
+CALL PROC_DELETE_USER('XHS');#使用该函数
 ```
 - 
 - `mysql_stmt_fetch_column`，就保证有 `result.buffer_length` 长度的数据填入了 `buffer` 的对应位置
