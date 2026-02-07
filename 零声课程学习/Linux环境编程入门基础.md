@@ -196,3 +196,8 @@ fseek(fp, 0, SEEK_SET);
 - `int mysql_stmt_fetch_column(MYSQL_STMT *stmt, MYSQL_BIND *bind, unsigned int column, unsigned long offset)`读取预处理语句结果集中指定列、指定偏移量的数据 
 - result.buffer = buffer + start;就保证有 `result.buffer_length` 长度的数据填入了 `buffer+start` 的对应位置
 - `int mysql_stmt_close(MYSQL_STMT *stmt)`关闭预处理语句句柄成功0
+
+### DNS
+dns的本质是计算机发出包，header和question，通过拥有的域名去问这个IP是什么
+#### 小知识
+- header->flags = htons(0x0100);计算机小端，服务器大端
