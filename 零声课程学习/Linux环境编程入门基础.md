@@ -159,7 +159,10 @@ END&&
 CALL PROC_DELETE_USER('XHS');#使用该函数
 ```
 #### C语言中的 C API
+##### 初始化
 - `MYSQL mysql;`创建需要的句柄
-- MYSQL *mysql_init(MYSQL *mysql)
+- `MYSQL *mysql_init(MYSQL *mysql)`对句柄进行初始化 -- 失败返回NULL
+- `MYSQL *mysql_real_connect(MYSQL *mysql, const char *host, const char *user, const char *passwd, const char *db, unsigned int port, const char *unix_socket, unsigned long client_flag)`建立与 MySQL 服务器的连接，参数依次为：句柄、服务器 IP、用户名、密码、数据库名、端口、unix 套接字（NULL）、客户端标志（0）--失败返回NULL
+##### 普通sql执行
 - `mysql_real_query(handle, SQL_SELECT_TBL_USER, strlen(SQL_SELECT_TBL_USER))`
 - `mysql_stmt_fetch_column`，就保证有 `result.buffer_length` 长度的数据填入了 `buffer` 的对应位置
