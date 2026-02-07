@@ -234,7 +234,7 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 	5. `int slen = sendto(sockfd, request, length, 0, (struct sockaddr*)&servaddr, sizeof(struct sockaddr));` <mark style="background:#ff4d4f">包裹寄给DNS服务器</mark>
 		1. sendto ()：拿着你的包裹（request）、包裹大小（length），通过刚才的专属窗口（sockfd），寄到填好的 DNS 服务器地址（servaddr）；
 		2. slen是实际寄出去的字节数
-	6. 再创建一个
+	6. 再创建一个收件的数组，一个确定收件的结构体，来存服务器地址，一个来告诉他们地址最大多大。`
 
 ##### 必要的预备
 - dns_header主要的组成成员：
