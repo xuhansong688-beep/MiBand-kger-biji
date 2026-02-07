@@ -222,12 +222,20 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 2. 创建header和question结构体，来存储必要的内容
 3. 填入header的信息
 4. 使用名字填好question的内容
-5. 将header和question组合成一个char \*request 顺序是header name type class
+5. 将header和question组合成一个char \*request 顺序是header name type class 返回request的长度
 6. 使用socket来进行数据的传送
 	1. 设置一个函数，接受一个域名
 	2. 创建UDP套接字`int sockfd = socket(AF_INET, SOCK_DGRAM, 0);` AF_INET是代表v4，SOCK_DGRAM是DNS常用的内容 --失败返回-1 <mark style="background:#ff4d4f">开一个通信通道</mark>
-	3. `Struct sockaddr_in servaddr = {0}`
-		1. `servaddr.sin_family = AF_INET;` 设置地址族
+	3. `Struct sockaddr_in servaddr = {0}`<mark style="background:#ff4d4f">写好收件人地址</mark>
+		1. `servaddr.sin_family = AF_INET;` 设置地址族IPv4
+		2. `servaddr.sin_port = htons(53);` 设置端口号
+		3. `servaddr.sin_addr.s_addr = inet_addr(1...4);` 配置服务器地址
+	4. 调用两个创建一个合成 回程一个长度
+	5. `int slen = sendto(sockfd, request, length, 0, (struct sockaddr*)&servaddr, sizeof(struct sockaddr));` <mark style="background:#ff4d4f">包裹寄给DNS服务器</mark>
+		1. sendto ()：拿着你的包裹（request）、包裹大小（length），通过刚才的专属窗口（sockfd），寄到填好的 DNS 服务器地址（servaddr）；
+		2. slen是实际寄出去的字节数
+	6. 再创建一个
+
 ##### 必要的预备
 - dns_header主要的组成成员：
 	- id 存储一个随机数
