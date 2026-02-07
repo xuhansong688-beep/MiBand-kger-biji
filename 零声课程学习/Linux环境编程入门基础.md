@@ -217,7 +217,10 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 #### 小知识
 - header->flags = htons(0x0100);计算机小端，服务器大端
 #### C语言下的DNS
-##### 必要的使用
+##### 整体流程
+1. 确认希望收到IP的网址和基础的数据类型，例如IPv4/IPv6
+2. 
+##### 必要的预备
 - dns_header主要的组成成员：
 	- id 存储一个随机数
 	- flags 存一堆信息，一般htons(0x0100);就行
@@ -230,4 +233,5 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 	- QTYPE 类型 0x001代表A
 	- QCLASS 0x0001代表IN
 - DNS_SERVER_PORT 是53
-- DNS_SERVER_IP 可以是114.14
+- DNS_SERVER_IP 可以是114.114.114.114
+
