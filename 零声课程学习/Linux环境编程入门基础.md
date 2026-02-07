@@ -109,6 +109,7 @@ pthread_create(&tid, NULL, worker_func, worker);//这个worker本身就是地址
 - 首先是初始化管理模块，并在其中初始化好所有的执行队列，里面用condwait全部等待加入任务后的condsignal，每当出现signal，便继续向下执行
 - 后续进行任务的使能，加入不同的任务，callback会在抢占到锁以后自动向后执行。
 ### mysql数据库相关内容学习
+gcc -o mysql mysql.c -I /usr/include/mysql/ -lmysqlclient
 #### 知识点补充
 - 数据库（Database）是按照数据结构来组织、存储和管理数据的仓库。每个数据库都有一个或多个不同的 API 用于创建，访问，管理，搜索和复制所保存的数据
 - use mysql 实际含义是使用本机自带的database
