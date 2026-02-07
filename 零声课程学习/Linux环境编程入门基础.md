@@ -168,5 +168,18 @@ CALL PROC_DELETE_USER('XHS');#使用该函数
 - `MYSQL_RES *mysql_store_result(MYSQL *mysql)`将selete的结果存到本地内存 --失败返回NULL
 - `my_ulonglong mysql_num_rows(MYSQL_RES *result)`返回结果的总行数
 - `unsigned int mysql_num_fields(MYSQL_RES *result)`返回结果的总列数
+- `MYSQL_ROW mysql_fetch_row(MYSQL_RES *result)`逐行读取结果，返回字符串数组 --失败返回NULL
+- `void mysql_free_result(MYSQL_RES *result)`释放结果集的内存
+##### 文件处理
+- 文件大小获取：
+```C
+fseek(fp, 0, SEEK_END);
+int length = ftell(fp); // file size
+fseek(fp, 0, SEEK_SET);
+```
+- `fread(buffer, 1, length, fp);`从fp拿一字节，拿length次到buffer，返回文件的大小
+##### 预处理sql执行
+- `MYSQL_STMT *mysql_stmt_init(MYSQL *mysql)`初始化预处理语句句柄，用于执行带占位符的 SQL
+- `int mysql_stmt_prepare(MYSQL_STMT *stmt, const char *stmt_str, unsigned long length)`编译预处理 SQL 语句（含 ? 占位符）
 - 
 - `mysql_stmt_fetch_column`，就保证有 `result.buffer_length` 长度的数据填入了 `buffer` 的对应位置
