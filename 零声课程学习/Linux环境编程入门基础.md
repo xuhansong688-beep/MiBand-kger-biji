@@ -216,4 +216,18 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 - `char *strtok(char *str, const char *delim);`按照后面分割，没有了返回NULL，后面是NULL开始，不是线程安全 
 #### 小知识
 - header->flags = htons(0x0100);计算机小端，服务器大端
-#
+#### C语言下的DNS
+##### 必要的使用
+- dns_header主要的组成成员：
+	- id 存储一个随机数
+	- flags 存一堆信息，一般htons(0x0100);就行
+	- questions_count 一般就是1，有一个问题，查一个ip
+	- answer_count 由服务器回答填数量
+	- auth 填零
+	- additional 填零
+- dnsquestion 的主要组成成员
+	- QNAME 例如3www5baidu3com0的形式
+	- QTYPE 类型 0x001代表A
+	- QCLASS 0x0001代表IN
+- DNS_SERVER_PORT 是53
+- DNS_SERVER_IP 可以是114.14
