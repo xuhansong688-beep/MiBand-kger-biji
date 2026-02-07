@@ -203,6 +203,15 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 - `size_t strlen(const char *str);`计算字符串的有效长度
 - `char *strcpy(char *dest, const char *src);`后面的字符串拷贝到目标字符串
 - `char *strncpy(char *dest, const char *src, size_t n);`拷贝n个，更安全
-- `char *strcat(char *dest, const char *src);`后面的拼接到前面
+- `char *strcat(char *dest, const char *src);`后面的拼接并存到前面的后面，注意要符合dest的大小
+- `char *strncat(char *dest, const char *src, size_t n);`拼接多少个
+- `int strcmp(const char *str1, const char *str2);`比较两个字符串的全部，=0是全相等，ASCII值的大小，大于小于
+- `int strncmp(const char *str1, const char *str2, size_t n);`比较前面的n个
+- `char *strchr(const char *str, int c);`查找第一个指定字符，并存储该地址
+- `strrchr`是最后一次出现的位置
+- `char *strstr(const char *haystack, const char *needle);`后面字符串的位置，返回首地址
+- `void *memset(void *ptr, int value, size_t n);`设定指定值
+- `void *memcpy(void *dest, const void *src, size_t n);`拷贝任何数据
+- `char *strdup(const char *s);`malloc+strcpy的作用
 #### 小知识
 - header->flags = htons(0x0100);计算机小端，服务器大端
