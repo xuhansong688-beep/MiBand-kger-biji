@@ -199,5 +199,10 @@ fseek(fp, 0, SEEK_SET);
 
 ### DNS
 dns的本质是计算机发出包，header和question，通过拥有的域名去问这个IP是什么
+#### 字符串操作函数
+- `size_t strlen(const char *str);`计算字符串的有效长度
+- `char *strcpy(char *dest, const char *src);`后面的字符串拷贝到目标字符串
+- `char *strncpy(char *dest, const char *src, size_t n);`拷贝n个，更安全
+- `char *strcat(char *dest, const char *src);`后面的拼接到前面
 #### 小知识
 - header->flags = htons(0x0100);计算机小端，服务器大端
