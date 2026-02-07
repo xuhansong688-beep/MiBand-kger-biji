@@ -192,5 +192,6 @@ fseek(fp, 0, SEEK_SET);
 - `int mysql_stmt_bind_result(MYSQL_STMT *stmt, MYSQL_BIND *bind)` 绑定预处理语句的输出结果到结构体
 - `mysql_stmt_store_result(MYSQL_STMT *stmt)` 将结果存到本地内存
 - `int mysql_stmt_fetch(MYSQL_STMT *stmt)`读取预处理的下一行结果，成功返回0，可能因为数据太大装不下，就会出现MYSQL_DATA_TRUNCATED的截断，是合理正常的
-- `int mysql_stmt_fetch_column(MYSQL_STMT *stmt, MYSQL_BIND *bind, unsigned int column, unsigned long offset)` 
-- `mysql_stmt_fetch_column`，就保证有 `result.buffer_length` 长度的数据填入了 `buffer` 的对应位置
+- `int mysql_stmt_fetch_column(MYSQL_STMT *stmt, MYSQL_BIND *bind, unsigned int column, unsigned long offset)`读取预处理语句结果集中指定列、指定偏移量的数据 
+- result.buffer = buffer + start;就保证有 `result.buffer_length` 长度的数据填入了 `buffer+start` 的对应位置
+- `int mysql_stmt_close(MYSQL_STMT *stmt)`关闭预处理语句句柄成功0
