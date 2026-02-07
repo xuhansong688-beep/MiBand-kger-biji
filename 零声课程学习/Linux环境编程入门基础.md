@@ -188,5 +188,8 @@ fseek(fp, 0, SEEK_SET);
 	- buffer_length buffer装多少字节
 -  `int mysql_stmt_bind_param(MYSQL_STMT *stmt, MYSQL_BIND *bind)` 用于绑定结构体，如果是小数据就可以直接execute了。但是因为大数据，所以只占位，不传输，告诉传输类型 --成功0
 - `int mysql_stmt_send_long_data(MYSQL_STMT *stmt, unsigned int param_number, const char *data, unsigned long length)` 向指定占位符发送长数据，param是占位符索引，从0开始。 -- 成功返回0
-- `int mysql_stmt_execute(MYSQL_STMT *stmt)`
+- `int mysql_stmt_execute(MYSQL_STMT *stmt)` 执行编译好的预处理语句 --成功0
+- `int mysql_stmt_bind_result(MYSQL_STMT *stmt, MYSQL_BIND *bind)` 绑定预处理语句的输出结果到结构体
+- `mysql_stmt_store_result(MYSQL_STMT *stmt)` 将结果存到本地内存
+- `int mysql_stmt_fetch(MYSQL_STMT *stmt)`读取预处理的下一行结果，成功返回0，
 - `mysql_stmt_fetch_column`，就保证有 `result.buffer_length` 长度的数据填入了 `buffer` 的对应位置
