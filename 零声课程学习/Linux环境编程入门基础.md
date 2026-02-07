@@ -225,8 +225,9 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 5. 将header和question组合成一个char \*request 顺序是header name type class
 6. 使用socket来进行数据的传送
 	1. 设置一个函数，接受一个域名
-	2. 创建UDP套接字`int sockfd = socket(AF_INET, SOCK_DGRAM, 0);` AF_INET是代表v4，SOCK_DGRAM是DNS常用的内容 --失败返回-1 
-	3. 
+	2. 创建UDP套接字`int sockfd = socket(AF_INET, SOCK_DGRAM, 0);` AF_INET是代表v4，SOCK_DGRAM是DNS常用的内容 --失败返回-1 <mark style="background:#ff4d4f">开一个通信通道</mark>
+	3. `Struct sockaddr_in servaddr = {0}`
+		1. `servaddr.sin_family = AF_INET;` 设置地址族
 ##### 必要的预备
 - dns_header主要的组成成员：
 	- id 存储一个随机数

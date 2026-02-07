@@ -1,5 +1,6 @@
 [
   "obsidian-git",
   "obsidian-linter",
-  "simple-code-formatter"
+  "simple-code-formatter",
+  "editing-toolbar"
 ]
