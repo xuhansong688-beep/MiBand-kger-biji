@@ -139,7 +139,13 @@ drop database name_DB;#删除数据库
 create database name_DB;#创建数据库
 use name_DB;#使用数据库
 create table TB_name(
+	U_ID INT PRIMARY KEY AUTO_INCREMENT,
+	U_NAME VARCHAR(32),
+	U_GENDER VARCHAR(8)
 );
+INSERT TB_XHS(U_NAME,U_GENDER) VALUES("XHS","MAN");
+SELECT * FROM TB_XHS;#zhan'shi
+
 ```
 - 
 - `mysql_stmt_fetch_column`，就保证有 `result.buffer_length` 长度的数据填入了 `buffer` 的对应位置
