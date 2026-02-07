@@ -164,5 +164,9 @@ CALL PROC_DELETE_USER('XHS');#使用该函数
 - `MYSQL *mysql_init(MYSQL *mysql)`对句柄进行初始化 -- 失败返回NULL
 - `MYSQL *mysql_real_connect(MYSQL *mysql, const char *host, const char *user, const char *passwd, const char *db, unsigned int port, const char *unix_socket, unsigned long client_flag)`建立与 MySQL 服务器的连接，参数依次为：句柄、服务器 IP、用户名、密码、数据库名、端口、unix 套接字（NULL）、客户端标志（0）--失败返回NULL
 ##### 普通sql执行
-- `mysql_real_query(handle, SQL_SELECT_TBL_USER, strlen(SQL_SELECT_TBL_USER))`
+- `int mysql_real_query(MYSQL *mysql, const char *stmt_str, unsigned long length)`执行该语句 --成功返回0
+- `MYSQL_RES *mysql_store_result(MYSQL *mysql)`将selete的结果存到本地内存 --失败返回NULL
+- `my_ulonglong mysql_num_rows(MYSQL_RES *result)`返回结果的总行数
+- `unsigned int mysql_num_fields(MYSQL_RES *result)`返回结果的总列数
+- 
 - `mysql_stmt_fetch_column`，就保证有 `result.buffer_length` 长度的数据填入了 `buffer` 的对应位置
