@@ -180,10 +180,13 @@ fseek(fp, 0, SEEK_SET);
 - `fread(buffer, 1, length, fp);`从fp拿一字节，拿length次到buffer，返回文件的大小
 ##### 预处理sql执行
 - `MYSQL_STMT *mysql_stmt_init(MYSQL *mysql)`初始化预处理语句句柄，用于执行带占位符的 SQL
-- `int mysql_stmt_prepare(MYSQL_STMT *stmt, const char *stmt_str, unsigned long length)`编译预处理 SQL 语句（含 ? 占位符）
+- `int mysql_stmt_prepare(MYSQL_STMT *stmt, const char *stmt_str, unsigned long length)`编译预处理 SQL 语句（含 ? 占位符） -- 成功0
 - `MYSQL_BIND`结构体是预处理的核心步骤，代表？的位置
 	- buffer_type数据类型 如`MYSQL_TYPE_LONG`,`MYSQL_TYPE_LONG_BLOB`传入的数据类型
-	- buffer内存地址，指向程序中存储数据实际地址，一般NULL
+	- buffer内存地址，指向程序中存储数据实际地址，一般NULL，是为了后面send使用
 	- length实际长度指针，存放到真实字节数
 	- buffer_length buffer装多少字节
+-  `int mysql_stmt_bind_param(MYSQL_STMT *stmt, MYSQL_BIND *bind)` 用于绑定结构体，如果是小数据就可以直接execute了。但是因为大数据，所以只占位，不传输，告诉传输类型 --成功0
+- `int mysql_stmt_send_long_data(MYSQL_STMT *stmt, unsigned int param_number, const char *data, unsigned long length)` 向指定占位符发送长数据，param是占位符索引，从0开始。 -- 成功返回0
+- `int mysql_stmt_execute(MYSQL_STMT *stmt)`
 - `mysql_stmt_fetch_column`，就保证有 `result.buffer_length` 长度的数据填入了 `buffer` 的对应位置
