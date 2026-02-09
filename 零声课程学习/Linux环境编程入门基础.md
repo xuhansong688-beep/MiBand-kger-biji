@@ -235,9 +235,6 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 		1. sendto ()：拿着你的包裹（request）、包裹大小（length），通过刚才的专属窗口（sockfd），寄到填好的 DNS 服务器地址（servaddr）；
 		2. slen是实际寄出去的字节数
 	6. 再创建一个收件的数组，一个确定收件的结构体，来存服务器地址，一个来告诉他们地址最大多大。`int n = recvfrom(sockfd, response, sizeof(response), 0, (struct sockaddr*)&addr, (socklen_t*)&addr_len);`n是收到的字节大小 response存报文
-
-
-
 ##### 必要的预备
 - dns_header主要的组成成员：
 	- id 存储一个随机数
@@ -252,4 +249,9 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 	- QCLASS 0x0001代表IN
 - DNS_SERVER_PORT 是53
 - DNS_SERVER_IP 可以是114.114.114.114
+### HTTP
+首先，我们先明确几个概念
+- DNS 域名服务器，可以通过一个www来获得这个网站的ip；
+- UDP 一种传输方式，他以快速传输见长，不要求回执
+- HTTP 
 
