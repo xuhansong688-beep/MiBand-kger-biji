@@ -288,12 +288,28 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 5. 初始化监听
 ```C
 fd_set fdread;//可以使用这个内容进行监听
-FD_ZERO(&fdread);//清空
+FD_ZERO(&fdread);//清空脏数据
 FD_SET(sockfd, &fdread);// 把sockfd加入“读监听集合”
-
 // 设置select超时时间：5秒
 struct timeval tv;
 tv.tv_sec = 5;  // 秒
 tv.tv_usec = 0; // 微秒
 ```
-
+6. 创立一个动态内存储存结果
+7. 创立一个循环持续进行select，直到出现三种可能
+```C
+while (1) {
+    int selection = select(sockfd + 1, & fdread, NULL, NULL, & tv);
+    if (!selection || !FD_ISSET(sockfd, & fdread)) {
+        break;
+    } else {
+        memset(buffer, 0, BUFFER_SIZE);
+        int len = recv(sockfd, buffer, BUFFER_SIZE, 0);
+        if (len == 0) { // disconnect
+            break;
+        }
+        result = realloc(result, (strlen(result) + len + 1) * sizeof(char));
+        strncat(result, buffer, len);
+    }
+}
+```
