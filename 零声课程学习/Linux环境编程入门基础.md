@@ -265,4 +265,8 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 1. 通过域名查询ip
 	1. 上段代码使用了DNS来进行ip查询，我们这次使用一个更简单的办法
 	2. `struct hostent *host_entry = gethostbyname(hostname);`使用系统带的结构体接受一个使用自带函数查询的ip，返回是<mark style="background:#ff4d4f">二进制</mark>结构化ip  --失败NULL
-	3. 
+	3. `inet_ntoa(*(struct in_addr*)*host_entry->h_addr_list);`将结构化的ip转化为点分十进制方便后续建立连接
+	4. `sockfd = socket(AF_INET, SOCK_STREAM, 0)`创建TCP接套字，并写好地址结构`struct sockaddr_in sin`，和DNS相似，但是这里用了80的端口
+	5. `connect(sockfd, (struct sockaddr*)&sin, sizeof(struct sockaddr_in))`建立三次握手，把sockfd和目标ip绑定  --成功返回0
+	6. `fcntl(sockfd, F_SETFL, O_NONBLOCK)`设置为非阻塞，zhe
+	7. 
