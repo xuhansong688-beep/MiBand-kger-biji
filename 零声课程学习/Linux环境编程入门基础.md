@@ -300,11 +300,14 @@ tv.tv_usec = 0; // 微秒
 	1. 首先进行监听`int selection = select(sockfd+1,&fdread,NULL,NULL, &tv);`之所以由fdread是因为有可能有很多需要监听的内容
 	2. 检查监听状态`if (!selection || !FD_ISSET(sockfd, & fdread)) break; ` 如果超时或者sockfd不在fdread中没就绪，即退出循环
 	3. 置零原本的buffer，用来接收新的数据`len = recv(sockfd, buffer, BUFFER_SIZE, 0);`返回一个结果的长度。 --失败0
-	4. 每次收到数据，都扩容result`result = realloc(result, (strlen(result) + len + 1) * sizeof(char));`，存一个新的buffer，直到数据接受完全。
+	4. 每次收到数据，都扩容result`result = realloc(result, (strlen(result) + len + 1) * sizeof(char));`，存一个新的buffer`strncat(result, buffer, len);`，直到数据接受完全。
+	5. 最后退出循环
 ```C
 while (1) {
-    
-    else {
+    int selection = select(sockfd + 1, & fdread, NULL, NULL, & tv);
+    if (!selection || !FD_ISSET(sockfd, & fdread)) {
+        break;
+    } else {
         memset(buffer, 0, BUFFER_SIZE);
         int len = recv(sockfd, buffer, BUFFER_SIZE, 0);
         if (len == 0) { // disconnect
@@ -315,3 +318,4 @@ while (1) {
     }
 }
 ```
+8. 最后还要注意的是，请求资源的时候，加入/就代表首页，加入其他的也可以求证不同的位置地方
