@@ -270,8 +270,7 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 	1. `sockfd = socket(AF_INET, SOCK_STREAM, 0)`创建TCP接套字，并写好地址结构`struct sockaddr_in sin`，和DNS相似，但是这里用了80的端口
 	2. `connect(sockfd, (struct sockaddr*)&sin, sizeof(struct sockaddr_in))`建立三次握手，把sockfd和目标ip绑定  --成功返回0
 	3. `fcntl(sockfd, F_SETFL, O_NONBLOCK)`设置为非阻塞，这样不影响继续运行，后面会用select监听
-3. 进行HTTP请求
-	1. 首先构造一个请求报文
+3. 构造一个请求报文
 ```C
 	char buffer[BUFFER_SIZE] = {0};
 	sprintf(buffer, 
@@ -279,8 +278,22 @@ dns的本质是计算机发出包，header和question，通过拥有的域名去
 	Host: %s\r\n\
 	%s\r\n\
 	\r\n",
-	resource,"HTTP/1.1",
-	hostname,
-	"Connection: close\r\n"
+	resource,//资源类型，写进去的
+	"HTTP/1.1",//通信版本
+	hostname,//域名
+	"Connection: close\r\n"//连接方式，响应及关闭
 );
 ```
+4. HTTP的发送请求`send(sockfd, buffer, strlen(buffer), 0);`
+5. 初始化监听
+```C
+fd_set fdread;//可以使用这个内容进行监听
+FD_ZERO(&fdread);//清空
+FD_SET(sockfd, &fdread);// 把sockfd加入“读监听集合”
+
+// 设置select超时时间：5秒
+struct timeval tv;
+tv.tv_sec = 5;  // 秒
+tv.tv_usec = 0; // 微秒
+```
+
