@@ -296,13 +296,15 @@ tv.tv_sec = 5;  // 秒
 tv.tv_usec = 0; // 微秒
 ```
 6. 创立一个动态内存储存结果
-7. 创立一个循环持续进行select，直到出现三种可能
+7. 创立一个循环持续进行select，数据会分多次来到，直到出现三种可能
+	1. 首先进行监听`int selection = select(sockfd+1,&fdread,NULL,NULL, &tv);`之所以由fdread是因为有可能有很多需要监听的内容
+	2. 检查监听状态`if (!selection || !FD_ISSET(sockfd, & fdread)) break; ` 如果超时或者sockfd不在fdread中没就绪，即退出循环
+	3. 置零原本的buffer，用来接收新的数据`len = recv(sockfd, buffer, BUFFER_SIZE, 0);`返回一个结果的长度。 --失败0
+	4. 每次收到数据，都扩容result`result = realloc(result, (strlen(result) + len + 1) * sizeof(char));`，存一个新的buffer，直到数据接受完全。
 ```C
 while (1) {
-    int selection = select(sockfd + 1, & fdread, NULL, NULL, & tv);
-    if (!selection || !FD_ISSET(sockfd, & fdread)) {
-        break;
-    } else {
+    
+    else {
         memset(buffer, 0, BUFFER_SIZE);
         int len = recv(sockfd, buffer, BUFFER_SIZE, 0);
         if (len == 0) { // disconnect
