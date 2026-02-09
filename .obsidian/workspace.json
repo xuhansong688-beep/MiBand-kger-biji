@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "new",
+                "query": "初始化",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -192,7 +193,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b446ee7a0cb0309c",
+  "active": "4f1f95ac46eb7cb6",
   "lastOpenFiles": [
     "零声课程学习/Linux环境编程入门基础.md",
     "未命名.base",
