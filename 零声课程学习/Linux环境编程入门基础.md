@@ -326,7 +326,7 @@ while (1) {
 2. 设置`struct sockaddr_in addr;`地址卡，装入协议，端口，ip地址`INADDR_ANY`是所有ip
 3. 绑定sockfd和地址卡，就可以建立连接
 4. `listen(sockfd, 5)`建立监听5个信息
-5. 使用`epoll_create(1)`，然后创立两个e'po结构,一个ev是注册修改监控，一个events数组是用来使用 `epoll_wait(epfd, events, EPOLL_SIZE, 5);`来接收返回的实际触发类型
+5. 使用`epoll_create(1)`，然后创立两个epoll_event结构,一个ev是注册修改监控，一个events数组是用来使用 `epoll_wait(epfd, events, EPOLL_SIZE, 5);`来接收返回的实际触发类型
 6. ev.events是可以EPOLLIN可读 EPOLLOUT可写 EPOLLET边沿触发 .data.fd 是sockfd类型
 7. 使用`epoll_ctl(epfd,EPOLL_CTL_ADD,sockfd,&ev)`来进行一个整体的监控，第二个变量是用来对这个fd做什么操作的
 8. 创立一个循环，在里面开始使用wait来监听信息`nready = epoll_wait(epfd,events,1024,5)`直到有信息了以后
