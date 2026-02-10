@@ -324,4 +324,6 @@ while (1) {
 #### 关键代码实现
 1. 首先，建立一个socket来监听一切信息
 2. 设置`struct sockaddr_in addr;`地址卡，装入协议，端口，ip地址`INADDR_ANY`是所有ip
-3. 绑定sockfd和地址
+3. 绑定sockfd和地址卡，就可以建立连接
+4. `listen(sockfd, 5)`建立监听5个信息
+5. 
