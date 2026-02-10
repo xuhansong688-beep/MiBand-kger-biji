@@ -327,4 +327,4 @@ while (1) {
 3. 绑定sockfd和地址卡，就可以建立连接
 4. `listen(sockfd, 5)`建立监听5个信息
 5. 使用`epoll_create(1)`创立两个结构,一个ev是注册修改监控，一个events数组是用来使用 `epoll_wait(epfd, events, EPOLL_SIZE, 5);`来接收返回的实际触发类型
-6. 
+6. ev.events是可以EPOLLIN可读 EPOLLOUT可写 EPOLLET边沿触发
