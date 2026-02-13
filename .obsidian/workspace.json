@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "零声课程学习/Linux环境编程入门基础.md",
+                "file": "代码学习/python学习/Python B站学习.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Linux环境编程入门基础"
+              "title": "Python B站学习"
             }
           }
         ]
@@ -194,8 +194,8 @@
   },
   "active": "b446ee7a0cb0309c",
   "lastOpenFiles": [
-    "代码学习/C++学习/B站C++代码学习.md",
     "零声课程学习/Linux环境编程入门基础.md",
+    "代码学习/C++学习/B站C++代码学习.md",
     "未命名.base",
     "代码学习/C++学习/C++核心编程.md",
     "代码学习/python学习/概率学习.md",
