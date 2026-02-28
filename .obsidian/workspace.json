@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "昂首/随机知识点学习/AI学习.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "AI学习"
             }
           }
         ]
@@ -195,15 +195,18 @@
   },
   "active": "b446ee7a0cb0309c",
   "lastOpenFiles": [
+    "昂首/Never Be Afraid/README.md",
+    "昂首/随机知识点学习/AI学习.md",
+    "昂首/Never Be Afraid",
+    "大冰聊天文案.md",
     "昂首/日记内心/大冰聊天文案.md",
-    "昂首/未命名",
+    "昂首/随机知识点学习",
     "昂首/日记内心",
     "昂首",
     "小米手环凯格尔学习/obsidian指令大全.md",
     "小米手环凯格尔学习/js学习.md",
     "小米手环凯格尔学习/GitHub及git的初步学习.md",
     "小米手环凯格尔学习/学习安排时间规划.md",
-    "README.md",
     "未命名.base",
     "代码学习/C++学习/职工管理系统.md",
     "Pasted image 20260125232617.png",
@@ -230,7 +233,6 @@
     "Pasted image 20251023202254.png",
     "学校内容/UNIX.md",
     "学校内容/smash.md",
-    "学校内容",
     "().md"
   ]
 }
