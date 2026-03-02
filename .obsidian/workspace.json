@@ -30,8 +30,21 @@
               "icon": "lucide-file",
               "title": "AI学习"
             }
+          },
+          {
+            "id": "3f1a41128fe9dfd6",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.12.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,7 +206,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b446ee7a0cb0309c",
+  "active": "3f1a41128fe9dfd6",
   "lastOpenFiles": [
     "昂首/Never Be Afraid/README.md",
     "昂首/随机知识点学习/AI学习.md",
