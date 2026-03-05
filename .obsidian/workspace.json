@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "昂首/随机知识点学习/AI学习.md",
+                "file": "零声课程学习/课程笔记.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "AI学习"
-            }
-          },
-          {
-            "id": "3f1a41128fe9dfd6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "零声课程学习/Linux环境编程入门基础.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Linux环境编程入门基础"
+              "title": "课程笔记"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -218,12 +193,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3f1a41128fe9dfd6",
+  "active": "b446ee7a0cb0309c",
   "lastOpenFiles": [
-    "代码学习/C++学习/B站C++代码学习.md",
-    "零声课程学习/Linux环境编程入门基础.md",
-    "昂首/Never Be Afraid/README.md",
     "昂首/随机知识点学习/AI学习.md",
+    "未命名 1.base",
+    "未命名.base",
+    "零声课程学习/课程笔记.md",
+    "零声课程学习/Linux环境编程入门基础.md",
+    "代码学习/C++学习/B站C++代码学习.md",
+    "昂首/Never Be Afraid/README.md",
     "昂首/Never Be Afraid",
     "大冰聊天文案.md",
     "昂首/日记内心/大冰聊天文案.md",
@@ -234,10 +212,8 @@
     "小米手环凯格尔学习/js学习.md",
     "小米手环凯格尔学习/GitHub及git的初步学习.md",
     "小米手环凯格尔学习/学习安排时间规划.md",
-    "未命名.base",
     "代码学习/C++学习/职工管理系统.md",
     "Pasted image 20260125232617.png",
-    "零声课程学习/未命名.md",
     "面试/服务器芯片学习.md",
     "面试",
     "代码学习/C++学习/C++核心编程.md",
@@ -247,7 +223,6 @@
     "代码学习/python学习",
     "代码学习",
     "未命名.canvas",
-    "代码学习/C++学习",
     "Pasted image 20251023202003.png",
     "Pasted image 20251023201950.png",
     "Pasted image 20251023202434.png",
