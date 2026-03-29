@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "未命名"
             }
+          },
+          {
+            "id": "52d684d996abc78c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "未命名"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,10 +218,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b446ee7a0cb0309c",
+  "active": "52d684d996abc78c",
   "lastOpenFiles": [
-    "代码学习/C++学习/B站C++代码学习.md",
     "代码学习/C++学习/未命名.md",
+    "未命名.md",
+    "代码学习/C++学习/B站C++代码学习.md",
     "面试/服务器芯片学习.md",
     "Pasted image 20260317143243.png",
     "昂首/Never Be Afraid/README.md",
