@@ -334,3 +334,87 @@ MBAP 头结构：`事务标识符(2B) + 协议标识符(2B, 固定0x0000) + 长�
 
 - **Asymétrique (monofilaire)** : un fil par rapport à la masse → sensible aux perturbations, courte portée.
 - **Symétrique (différentiel)** : comparaison entre deux fils → insensible aux perturbations, longue portée.
+# 1. Série 串行 vs Parallèle 并行
+（区分：**数据是一根一根发，还是多根一起发**）
+## Série 串行
+- **解释**：数据**一位一位**依次传输，只使用**1 根或 2 根数据线**。
+- **优点**：线路少、成本低、距离远、干扰小。
+- **缺点**：速度慢一点。
+- **例子**：
+    
+    - **RS232 / RS485**
+    - **UART**
+    - **USB**
+    - **Modbus RTU**
+    - 以太网
+    
+## Parallèle 并行
+
+- **解释**：数据**多位同时传输**（比如 8 位、16 位一起发），需要**多根数据线**。
+- **优点**：速度快。
+- **缺点**：线多、干扰大、**距离极短**。
+- **例子**：
+    
+    - 老式电脑 **并口 LPT**
+    - 早期硬盘线
+    - CPU 内部地址总线、数据总线
+# 2. Asynchrone 异步 vs Synchrone 同步
+
+（区分：**收发双方有没有共同时钟，靠什么对齐数据**）
+## Asynchrone 异步
+
+- **解释**：
+    
+    收发双方**没有共用时钟线**，只靠**起始位 + 停止位**来同步每帧数据。
+    
+    双方必须提前约定相同**波特率**。
+- **特点**：
+    
+    - 简单、线路少
+    - 不需要时钟线
+    - 效率稍
+- **例子**：
+    
+    - **UART**
+    - **RS232 / RS485**
+    - **Modbus RTU**
+    - 串口调试
+    
+## Synchrone 同步
+
+- **解释**：
+    
+    收发双方使用**同一时钟信号（CLK）**，时钟同步后连续传输数据，不需要起始位停止位。
+    
+- **特点**：
+    
+    - 速度快
+    - 效率高
+    - 必须有时钟线
+    
+- **例子**：
+    
+    - **SPI**
+    - **I2C**
+    - CAN 高速部分
+    - 存储器（Flash / SDRAM）
+    
+
+### 串行 Série
+
+一位一位发 → 线少、距离远 → **RS485、UART、Modbus**
+### 并行 Parallèle
+
+多位一起发 → 线多、速度快、距离短 → **并口、总线**
+### 异步 Asynchrone
+
+无时钟，靠起始位 / 停止位，波特率一致 → **UART、RS232、Modbus RTU**
+
+### 同步 Synchrone
+
+有时钟线 CLK，连续高速传输 → **SPI、I2C**
+
+- **Communication série** : transmission des données bit par bit sur un seul fil.
+- **Communication parallèle** : transmission de plusieurs bits simultanément sur plusieurs fils.
+- **Communication asynchrone** : pas de signal d’horloge commun ; synchronisation par bit de départ et bit d’arrêt.
+- **Communication synchrone** : synchronisation par un signal d’horloge (CLK) commun entre émetteur et récepteur.
