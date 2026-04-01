@@ -418,3 +418,14 @@ MBAP 头结构：`事务标识符(2B) + 协议标识符(2B, 固定0x0000) + 长�
 - **Communication parallèle** : transmission de plusieurs bits simultanément sur plusieurs fils.
 - **Communication asynchrone** : pas de signal d’horloge commun ; synchronisation par bit de départ et bit d’arrêt.
 - **Communication synchrone** : synchronisation par un signal d’horloge (CLK) commun entre émetteur et récepteur.
+> La liaison **RS232** est une norme **asynchrone** de communication série définie par l'EIA. Elle utilise des niveaux de tension **asymétriques** (+/-12V) et supporte la communication **full duplex**.
+### 2. 角色划分
+> - **DTE (Data Terminal Equipment)** : Ordinateur/MCU (TX, RX).
+> - **DCE (Data Communication Equipment)** : Modem/Passerelle (RX, TX).
+### 3. 电平转换
+> **MAX232** ou **FTDI (FT232R)** sont des circuits d'interface qui convertissent les niveaux logiques TTL (3.3V/5V) en niveaux RS232 (+/-15V) et inversement.
+
+### 4. Contrôle de flux
+
+> - **Matériel** : Utilisation des signaux **RTS/CTS** pour éviter le débordement de tampon.
+> - **Logiciel** : Utilisation des caractères **XON (0x11)** et **XOFF (0x13)**.
