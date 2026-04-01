@@ -78,9 +78,33 @@
               "icon": "lucide-file",
               "title": "服务器芯片学习"
             }
+          },
+          {
+            "id": "5a170ad557098444",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "bus.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "bus"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -242,14 +266,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "172a8eb3d1943ae9",
+  "active": "5a170ad557098444",
   "lastOpenFiles": [
+    "80d37d7ea3a47612afcfea2a8c39cdb1.jpg",
+    "面试/服务器芯片学习.md",
+    "bus.md",
     "代码学习/C++学习/C++核心编程.md",
     "代码学习/C++学习/B站C++代码学习.md",
     "未命名 1.md",
     "未命名.md",
     "代码学习/C++学习/未命名.md",
-    "面试/服务器芯片学习.md",
     "Pasted image 20260317143243.png",
     "昂首/Never Be Afraid/README.md",
     "昂首/随机知识点学习/AI学习.md",
