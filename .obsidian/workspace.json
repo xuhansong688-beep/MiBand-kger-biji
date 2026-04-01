@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代码学习/C++学习/C++核心编程.md",
+                "file": "面试/服务器芯片学习.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "C++核心编程"
+              "title": "服务器芯片学习"
             }
           }
         ],
@@ -112,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "多态",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,8 +133,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -243,8 +242,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4f1f95ac46eb7cb6",
+  "active": "172a8eb3d1943ae9",
   "lastOpenFiles": [
+    "代码学习/C++学习/C++核心编程.md",
     "代码学习/C++学习/B站C++代码学习.md",
     "未命名 1.md",
     "未命名.md",
@@ -253,7 +253,6 @@
     "Pasted image 20260317143243.png",
     "昂首/Never Be Afraid/README.md",
     "昂首/随机知识点学习/AI学习.md",
-    "代码学习/C++学习/C++核心编程.md",
     "零声课程学习/课程笔记.md",
     "未命名 1.base",
     "未命名.base",
