@@ -26,9 +26,11 @@ symmetric是镜像图像扩充的意思 不会因为简单的重复或零填充�
 先滤波的原因是要减少高频信号，防止频率混叠的现象
 
 ### 金字塔构建层
-gaussian_pyramid(I,nlev) 
+gaussian_pyramid(I,nlev) 主要实现了数据jin'zi
 nlev是金字塔层数，所以需要除以 log(2) 来换算为以2为底的对数算出层数
 cell创建一个空单元格组
+pyramid_filter是一个一维五头的低通滤波器
+
 
 
 
