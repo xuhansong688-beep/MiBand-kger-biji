@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bus.md",
+                "file": "实习/视觉图像/Matlab.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "bus"
+              "title": "Matlab"
             }
           }
         ],
@@ -269,16 +269,19 @@
   "active": "5a170ad557098444",
   "lastOpenFiles": [
     "80d37d7ea3a47612afcfea2a8c39cdb1.jpg",
-    "面试/服务器芯片学习.md",
+    "实习/视觉图像/Matlab.md",
+    "实习/视觉图像",
+    "昂首/随机知识点学习/AI学习.md",
+    "实习",
+    "昂首/Never Be Afraid/README.md",
     "bus.md",
+    "面试/服务器芯片学习.md",
     "代码学习/C++学习/C++核心编程.md",
     "代码学习/C++学习/B站C++代码学习.md",
     "未命名 1.md",
     "未命名.md",
     "代码学习/C++学习/未命名.md",
     "Pasted image 20260317143243.png",
-    "昂首/Never Be Afraid/README.md",
-    "昂首/随机知识点学习/AI学习.md",
     "零声课程学习/课程笔记.md",
     "未命名 1.base",
     "未命名.base",
@@ -299,8 +302,6 @@
     "代码学习/python学习/概率学习.md",
     "代码学习/python学习/Python B站学习.md",
     "零声课程学习",
-    "代码学习/python学习",
-    "代码学习",
     "未命名.canvas",
     "Pasted image 20251023202003.png",
     "Pasted image 20251023201950.png",
@@ -311,7 +312,6 @@
     "Pasted image 20251023205826.png",
     "Pasted image 20251023202254.png",
     "学校内容/UNIX.md",
-    "学校内容/smash.md",
-    "().md"
+    "学校内容/smash.md"
   ]
 }
