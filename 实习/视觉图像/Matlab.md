@@ -6,5 +6,27 @@ load_images(path,reduce) 实现了数据的读取和图像缩小数据实现
 files = dir(\[path '/\*.jpg']); --> files(1).name = 'A.jpg'
 sz是第一个图像的长宽高通道数
 I成为了一个零数组\[缩放后高度 × 缩放后宽度 × 3(RGB通道) × 图像数量]
+im是一个高宽通道数的数组归一化
+size(im,1)一维的大小
+im = imresize(im,\[r c],'bicubic'); 按照双三次插值法进行缩小
+通道保持不变
+#### display_pyramid
+用于拼接显示拉普拉斯金字塔或高斯金字塔
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
