@@ -24,6 +24,8 @@ symmetric是镜像图像扩充的意思 不会因为简单的重复或零填充�
 首先行向量然后列向量，缩减计算量
 然后再进行尺寸减半
 先滤波的原因是要减少高频信号，防止频率混叠的现象
+#### upsample(I,odd,filter)
+
 
 ### 金字塔构建层
 #### gaussian_pyramid(I,nlev) 
@@ -33,6 +35,7 @@ cell创建一个空单元格组
 pyramid_filter是一个一维五头的低通滤波器
 
 #### laplacian_pyramid(I,nlev)
+拉普拉斯金字塔，储存的是尺度间的差异
 
 
 
