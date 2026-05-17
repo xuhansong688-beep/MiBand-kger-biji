@@ -40,6 +40,12 @@ cell创建一个空单元格组
 #### pyramid_filter
 是一个一维五头的低通滤波器 f = \[.0625, .25, .375, .25, .0625];
 ### 融合核心层
+#### exposure_fusion(I,m)
+N代表了图的数量
+W(i,j,1) + W(i,j,2) + W(i,j,3) + W(i,j,4) = 1 每个权重图一个位置的数据为1
+contrast_parm对比度
+sat_parm饱和度
+wexp_parm曝光适当性
 
 
 
