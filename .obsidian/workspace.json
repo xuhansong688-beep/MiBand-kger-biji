@@ -35,24 +35,26 @@
             "id": "5a170ad557098444",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "实习/PCB/一些小点.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "未命名 1.base",
+                "viewName": "表格"
               },
-              "icon": "lucide-file",
-              "title": "一些小点"
+              "icon": "lucide-table",
+              "title": "未命名 1"
+            }
+          },
+          {
+            "id": "b73a7ae43d21ed95",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "未命名 1.base",
+                "viewName": "表格"
+              },
+              "icon": "lucide-table",
+              "title": "未命名 1"
             }
           },
           {
@@ -80,7 +82,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -242,10 +244,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5a170ad557098444",
+  "active": "b73a7ae43d21ed95",
   "lastOpenFiles": [
-    "实习/视觉图像/Matlab.md",
+    "未命名 1.md",
     "实习/PCB/一些小点.md",
+    "实习/视觉图像/Matlab.md",
     "实习/PCB",
     "实习/视觉图像/算法简述.md",
     "面试/服务器芯片学习.md",
@@ -259,7 +262,6 @@
     "bus.md",
     "代码学习/C++学习/C++核心编程.md",
     "代码学习/C++学习/B站C++代码学习.md",
-    "未命名 1.md",
     "Pasted image 20260317143243.png",
     "零声课程学习/课程笔记.md",
     "未命名 1.base",
