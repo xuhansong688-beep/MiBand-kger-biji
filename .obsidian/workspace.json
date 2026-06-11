@@ -30,6 +30,30 @@
               "icon": "lucide-file",
               "title": "课程笔记"
             }
+          },
+          {
+            "id": "2eb3bdc92b7b7792",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "昂首/Never Be Afraid/6月时间安排.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "6月时间安排"
+            }
           }
         ]
       }
@@ -195,8 +219,9 @@
   },
   "active": "172a8eb3d1943ae9",
   "lastOpenFiles": [
-    "零声课程学习/Linux环境编程入门基础.md",
     "昂首/Never Be Afraid/6月时间安排.md",
+    "零声课程学习/课程笔记.md",
+    "零声课程学习/Linux环境编程入门基础.md",
     "昂首/Never Be Afraid/README.md",
     "学校内容/MATLAB.md",
     "学校内容/scilab.md",
@@ -221,7 +246,6 @@
     "代码学习/C++学习/C++核心编程.md",
     "代码学习/C++学习/B站C++代码学习.md",
     "Pasted image 20260317143243.png",
-    "零声课程学习/课程笔记.md",
     "昂首/Never Be Afraid",
     "大冰聊天文案.md",
     "昂首/日记内心/大冰聊天文案.md",
