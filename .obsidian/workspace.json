@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "零声课程学习/课程笔记.md",
+                "file": "昂首/Never Be Afraid/6月时间安排.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "课程笔记"
+              "title": "6月时间安排"
             }
           },
           {
@@ -219,10 +219,10 @@
   },
   "active": "172a8eb3d1943ae9",
   "lastOpenFiles": [
+    "昂首/Never Be Afraid/README.md",
     "昂首/Never Be Afraid/6月时间安排.md",
     "零声课程学习/课程笔记.md",
     "零声课程学习/Linux环境编程入门基础.md",
-    "昂首/Never Be Afraid/README.md",
     "学校内容/MATLAB.md",
     "学校内容/scilab.md",
     "学校内容/smash.md",
