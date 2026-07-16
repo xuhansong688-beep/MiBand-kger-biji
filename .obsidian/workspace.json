@@ -11,10 +11,24 @@
             "id": "18b0270fef859954",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "昂首/Never Be Afraid/聊天.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "聊天"
             }
           }
         ]
@@ -182,6 +196,7 @@
   "active": "18b0270fef859954",
   "lastOpenFiles": [
     "昂首/Never Be Afraid/6月时间安排.md",
+    "昂首/Never Be Afraid/聊天.md",
     "昂首/Never Be Afraid/README.md",
     "零声课程学习/课程笔记.md",
     "零声课程学习/Linux环境编程入门基础.md",
@@ -218,7 +233,6 @@
     "小米手环凯格尔学习/js学习.md",
     "小米手环凯格尔学习/GitHub及git的初步学习.md",
     "小米手环凯格尔学习/学习安排时间规划.md",
-    "代码学习/C++学习/职工管理系统.md",
     "Pasted image 20260125232617.png",
     "未命名.canvas",
     "Pasted image 20251023202003.png",
